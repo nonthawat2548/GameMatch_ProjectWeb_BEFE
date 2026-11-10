@@ -1,5 +1,7 @@
 # ตรวจ frontend ด้วย Chromium แบบ headless
 
+`node frontend/tests/browser/steam-gallery.cjs` ตรวจเว็บ GameMatch ที่ Deploy แล้วโดยไม่แก้ข้อมูล: คลังอย่างน้อย 100 เกม/ชุดยอดนิยม 100 เกม รูปจริงครบทุกหน้าที่ 1366/390/320px ค้นหาแล้วกลับหน้าแรก เรียงชื่อ ลิงก์/วันที่ Steam และไม่มี overflow หรือ page error ผลอยู่ใน `docs/evidence/steam-browser/` ต้องเตรียม Playwright แยกจาก application ตามด้านล่างก่อนรัน
+
 `verify.cjs` เปิด production build บนพอร์ตว่างของ localhost และสร้าง browser context ใหม่ ไม่เปิดหน้าต่าง ไม่ใช้โปรไฟล์เบราว์เซอร์หรือควบคุมจอของผู้ใช้ เมื่อจบจะปิดเฉพาะ server/browser ที่สคริปต์สร้างเอง
 
 API และภาพทั้งหมดในชุดนี้เป็น fixtures ชื่อ `Demo:` ที่ดักเฉพาะใน context ทดสอบ ผล reload หมายถึงข้อมูลใน mock store ยังอยู่ ไม่ใช่หลักฐาน PostgreSQL persistence หรือสิทธิ์ของ Go

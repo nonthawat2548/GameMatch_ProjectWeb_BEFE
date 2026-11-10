@@ -1,0 +1,1096 @@
+{
+  "verifiedAt": "2026-11-10T08:39:18.174Z",
+  "api": "https://gamematch-api-hzv6.onrender.com/api/games",
+  "published": 112,
+  "popular": 100,
+  "sources": [
+    "https://store.steampowered.com/charts/mostplayed",
+    "https://store.steampowered.com/search/?filter=topsellers&category1=998&cc=th"
+  ],
+  "games": [
+    {
+      "id": 46,
+      "title": "Counter-Strike 2",
+      "steamId": 730,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "releaseDate": "2012-08-21",
+      "popularityOrder": 1,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 47,
+      "title": "Dota 2",
+      "steamId": 570,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+      "releaseDate": "2013-07-09",
+      "popularityOrder": 2,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 48,
+      "title": "PUBG: BATTLEGROUNDS",
+      "steamId": 578080,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1792718193",
+      "releaseDate": "2017-12-21",
+      "popularityOrder": 3,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 50,
+      "title": "Phantom Blade Zero",
+      "steamId": 4115450,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
+      "releaseDate": "2026-10-28",
+      "popularityOrder": 4,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 51,
+      "title": "Call of Duty®",
+      "steamId": 1938090,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/23af6cf41e2d09620caa07700a4cb3288dbcbaa8/header.jpg?t=1793996750",
+      "releaseDate": "2022-10-27",
+      "popularityOrder": 5,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 52,
+      "title": "Apex Legends™",
+      "steamId": 1172470,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/4219c147f1e094297c726d537518babba7f3ae2d/header.jpg?t=1793909605",
+      "releaseDate": "2020-11-04",
+      "popularityOrder": 6,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 53,
+      "title": "ROB RUN",
+      "steamId": 4262460,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "releaseDate": "2026-11-04",
+      "popularityOrder": 7,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 54,
+      "title": "Slay the Spire 2",
+      "steamId": 2868840,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309",
+      "releaseDate": "2026-03-05",
+      "popularityOrder": 8,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 55,
+      "title": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+      "steamId": 4348910,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/b241a3bc1cb144e70a4840157e127212738ea5b3/header_alt_assets_3.jpg?t=1794162078",
+      "releaseDate": "2026-10-28",
+      "popularityOrder": 9,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 56,
+      "title": "War Thunder",
+      "steamId": 236390,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/38881c549e623fe432af4e7b4bc3952b443906f5/header.jpg?t=1793692939",
+      "releaseDate": "2013-08-15",
+      "popularityOrder": 10,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 57,
+      "title": "Geometry Dash",
+      "steamId": 322170,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1775300400",
+      "releaseDate": "2014-12-22",
+      "popularityOrder": 11,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 58,
+      "title": "Tom Clancy's Rainbow Six Siege",
+      "steamId": 359550,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/1c7b1ea3405a69c54429e2aa3dc31f3cbbeaa456/header_alt_assets_28.jpg?t=1792001976",
+      "releaseDate": "2015-12-01",
+      "popularityOrder": 12,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 59,
+      "title": "Warframe",
+      "steamId": 230410,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1793987416",
+      "releaseDate": "2013-03-25",
+      "popularityOrder": 13,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 60,
+      "title": "Overwatch®",
+      "steamId": 2357570,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/5c208b2699cd38ed6125d039be388fa744db54a4/header_alt_assets_23.jpg?t=1793732501",
+      "releaseDate": "2023-08-10",
+      "popularityOrder": 14,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 61,
+      "title": "The Binding of Isaac: Rebirth",
+      "steamId": 250900,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg?t=1731977365",
+      "releaseDate": "2014-11-04",
+      "popularityOrder": 15,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 62,
+      "title": "Limbus Company",
+      "steamId": 1973530,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1793975559",
+      "releaseDate": "2023-02-26",
+      "popularityOrder": 16,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 63,
+      "title": "R.E.P.O.",
+      "steamId": 3241660,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/62177765c05399116f0453fe1177b00ceed698c4/header_alt_assets_3.jpg?t=1793278962",
+      "releaseDate": "2025-02-26",
+      "popularityOrder": 17,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 64,
+      "title": "Stardew Valley",
+      "steamId": 413150,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168",
+      "releaseDate": "2016-02-26",
+      "popularityOrder": 18,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 65,
+      "title": "WARDOGS",
+      "steamId": 1867240,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1791928607",
+      "releaseDate": "2026-09-10",
+      "popularityOrder": 19,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 66,
+      "title": "HELLDIVERS™ 2",
+      "steamId": 553850,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/850e2f9e5bb15c5706bb9a1edc832f4f782e8be5/header.jpg?t=1793395133",
+      "releaseDate": "2024-02-08",
+      "popularityOrder": 20,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 67,
+      "title": "Team Fortress 2",
+      "steamId": 440,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
+      "releaseDate": "2007-10-10",
+      "popularityOrder": 21,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 68,
+      "title": "Delta Force",
+      "steamId": 2507950,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2507950/6e37c04b841256f63c02760f2dd80ed22ddbd936/header_alt_assets_16.jpg?t=1794276014",
+      "releaseDate": "2024-12-04",
+      "popularityOrder": 22,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 69,
+      "title": "Battlefield™ 6",
+      "steamId": 2807960,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1793314012",
+      "releaseDate": "2025-10-10",
+      "popularityOrder": 23,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 70,
+      "title": "ARC Raiders",
+      "steamId": 1808500,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/41ee6c5c81a5797132879892586465b917acc563/header_alt_assets_9.jpg?t=1794215815",
+      "releaseDate": "2025-10-30",
+      "popularityOrder": 24,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 71,
+      "title": "Terraria",
+      "steamId": 105600,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1792530636",
+      "releaseDate": "2011-05-16",
+      "popularityOrder": 25,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 72,
+      "title": "Left 4 Dead 2",
+      "steamId": 550,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
+      "releaseDate": "2009-11-16",
+      "popularityOrder": 26,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 73,
+      "title": "Euro Truck Simulator 2",
+      "steamId": 227300,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1793285269",
+      "releaseDate": "2012-10-12",
+      "popularityOrder": 27,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 74,
+      "title": "VRChat",
+      "steamId": 438100,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
+      "releaseDate": "2017-02-01",
+      "popularityOrder": 28,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 75,
+      "title": "Grand Theft Auto V Legacy",
+      "steamId": 271590,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
+      "releaseDate": "2015-04-13",
+      "popularityOrder": 29,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 76,
+      "title": "Project Zomboid",
+      "steamId": 108600,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1793224893",
+      "releaseDate": "2013-11-08",
+      "popularityOrder": 30,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 77,
+      "title": "Valheim",
+      "steamId": 892970,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/df65cafab20dae97a243c7cc988e8bf959e4b906/header.jpg?t=1791544831",
+      "releaseDate": "2026-09-09",
+      "popularityOrder": 31,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 78,
+      "title": "BeamNG.drive",
+      "steamId": 284160,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/17f8af1312bc48e6cd90e5fb639d4981682af260/header.jpg?t=1792417797",
+      "releaseDate": "2015-05-29",
+      "popularityOrder": 32,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 79,
+      "title": "NARAKA: BLADEPOINT",
+      "steamId": 1203220,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203220/5857b2eed59cad31bea023c1b59fbb7c7064e222/header.jpg?t=1793846487",
+      "releaseDate": "2021-08-11",
+      "popularityOrder": 33,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 80,
+      "title": "Don't Starve Together",
+      "steamId": 322330,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/050ea9c51a4e96f707309d33b7cdd38e0a6cbfff/header_alt_assets_51.jpg?t=1793044716",
+      "releaseDate": "2016-04-21",
+      "popularityOrder": 34,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 81,
+      "title": "Aniimo",
+      "steamId": 4126040,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/c1ee5babadf5d46000587a5eaf5901bbb6b7013c/header.jpg?t=1793258293",
+      "releaseDate": "2026-09-15",
+      "popularityOrder": 35,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 82,
+      "title": "EA SPORTS FC™ 27",
+      "steamId": 4080220,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1793610006",
+      "releaseDate": "2026-09-24",
+      "popularityOrder": 36,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 83,
+      "title": "Rocket League®",
+      "steamId": 252950,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252950/3abd9ab079c8896a4762dbe34a853d89b7f704df/header_alt_assets_17.jpg?t=1791210513",
+      "releaseDate": "2015-07-06",
+      "popularityOrder": 37,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 84,
+      "title": "Enshrouded",
+      "steamId": 1203620,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
+      "releaseDate": "2026-10-15",
+      "popularityOrder": 38,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 85,
+      "title": "Hearts of Iron IV",
+      "steamId": 394360,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1791468228",
+      "releaseDate": "2016-06-06",
+      "popularityOrder": 39,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 86,
+      "title": "The Elder Scrolls V: Skyrim Special Edition",
+      "steamId": 489830,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247",
+      "releaseDate": "2016-10-27",
+      "popularityOrder": 40,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 87,
+      "title": "EA SPORTS FC™ 26",
+      "steamId": 3405690,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1789751159",
+      "releaseDate": "2025-09-25",
+      "popularityOrder": 41,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 88,
+      "title": "Garry's Mod",
+      "steamId": 4000,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1776868682",
+      "releaseDate": "2006-11-29",
+      "popularityOrder": 42,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 89,
+      "title": "eFootball™",
+      "steamId": 1665460,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1665460/86619d0fb7126b3d5276004175f9a62181223c0f/header.jpg?t=1792635226",
+      "releaseDate": "2021-09-29",
+      "popularityOrder": 43,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 90,
+      "title": "Moon Sweepers",
+      "steamId": 5335510,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5335510/41e1e802dfc069cc245b91043e451a2f9ffa80e3/header.jpg?t=1792950881",
+      "releaseDate": "2026-10-23",
+      "popularityOrder": 44,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 91,
+      "title": "PEAK",
+      "steamId": 3527290,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1792684718",
+      "releaseDate": "2025-06-16",
+      "popularityOrder": 45,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 92,
+      "title": "Bongo Cat",
+      "steamId": 3419430,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/header.jpg?t=1791309178",
+      "releaseDate": "2025-03-05",
+      "popularityOrder": 46,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 93,
+      "title": "Brotato",
+      "steamId": 1942280,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1942280/bf970261a3a42f346624ae9c48b5b317fc724857/header_alt_assets_4.jpg?t=1793641955",
+      "releaseDate": "2023-06-23",
+      "popularityOrder": 47,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 95,
+      "title": "Farming Simulator 25",
+      "steamId": 2300320,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1793106374",
+      "releaseDate": "2024-11-12",
+      "popularityOrder": 48,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 97,
+      "title": "TBH: Task Bar Hero",
+      "steamId": 3678970,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3678970/b817bb52f45ee036ec1319010324e86fce8e602c/header_alt_assets_1.jpg?t=1794173787",
+      "releaseDate": "2026-05-27",
+      "popularityOrder": 49,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 98,
+      "title": "Total War: WARHAMMER III",
+      "steamId": 1142710,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg?t=1790321531",
+      "releaseDate": "2022-02-16",
+      "popularityOrder": 50,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 99,
+      "title": "ELDEN RING",
+      "steamId": 1245620,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1790290043",
+      "releaseDate": "2022-02-24",
+      "popularityOrder": 51,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 100,
+      "title": "Street Fighter™ 6",
+      "steamId": 1364780,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1791866175",
+      "releaseDate": "2023-06-01",
+      "popularityOrder": 52,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 101,
+      "title": "DayZ",
+      "steamId": 221100,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1792059745",
+      "releaseDate": "2018-12-13",
+      "popularityOrder": 53,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 102,
+      "title": "Forza Horizon 6",
+      "steamId": 2483190,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/c53fe3362cc3267a5d34aca3e796b90963e0e23f/header_alt_assets_6.jpg?t=1793894652",
+      "releaseDate": "2026-05-18",
+      "popularityOrder": 54,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 103,
+      "title": "Palworld",
+      "steamId": 1623730,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367",
+      "releaseDate": "2026-07-09",
+      "popularityOrder": 55,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 104,
+      "title": "Sid Meier’s Civilization® VI",
+      "steamId": 289070,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1792718069",
+      "releaseDate": "2016-10-20",
+      "popularityOrder": 56,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 105,
+      "title": "RimWorld",
+      "steamId": 294100,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/76e0613b8197327299d5dbabb0a7fd7828a689a2/header.jpg?t=1782756789",
+      "releaseDate": "2018-10-17",
+      "popularityOrder": 57,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 106,
+      "title": "Crimson Desert Enhanced",
+      "steamId": 3321460,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1794275035",
+      "releaseDate": "2026-03-19",
+      "popularityOrder": 58,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 107,
+      "title": "THE FINALS",
+      "steamId": 2073850,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/4b0efa1275c8cedc030209eb174af726a5ca1776/header.jpg?t=1792501373",
+      "releaseDate": "2023-12-07",
+      "popularityOrder": 59,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 108,
+      "title": "Age of Empires II: Definitive Edition",
+      "steamId": 813780,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1790623375",
+      "releaseDate": "2019-11-14",
+      "popularityOrder": 60,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 109,
+      "title": "Brawlhalla",
+      "steamId": 291550,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291550/f6dd1b0a6a2b6e161604b36788276b18d36909cf/header.jpg?t=1789564454",
+      "releaseDate": "2017-10-17",
+      "popularityOrder": 61,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 110,
+      "title": "Arena Breakout: Infinite",
+      "steamId": 2073620,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073620/eccc13f9398a6af599a78ec7a437d6540f43a3c5/header.jpg?t=1791983571",
+      "releaseDate": "2025-09-15",
+      "popularityOrder": 62,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 111,
+      "title": "Destiny 2",
+      "steamId": 1085660,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/0ccf0dc0a8c4ec078db7ab99ddc820b2fa884441/header.jpg?t=1781815889",
+      "releaseDate": "2019-10-01",
+      "popularityOrder": 63,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 112,
+      "title": "Assetto Corsa",
+      "steamId": 244210,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg?t=1793288663",
+      "releaseDate": "2014-12-19",
+      "popularityOrder": 64,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 113,
+      "title": "7 Days to Die",
+      "steamId": 251570,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1793815172",
+      "releaseDate": "2024-07-25",
+      "popularityOrder": 65,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 114,
+      "title": "Mount & Blade II: Bannerlord",
+      "steamId": 261550,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/header.jpg?t=1764252300",
+      "releaseDate": "2022-10-25",
+      "popularityOrder": 66,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 115,
+      "title": "Monster Hunter Wilds",
+      "steamId": 2246340,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1787549555",
+      "releaseDate": "2025-02-27",
+      "popularityOrder": 67,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 116,
+      "title": "Hunt: Showdown 1896",
+      "steamId": 594650,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/8cf55bcd74fc14c93f3a9cc7d0a442afabab6f88/header_alt_assets_29.jpg?t=1791385253",
+      "releaseDate": "2019-08-27",
+      "popularityOrder": 68,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 117,
+      "title": "Zenless Zone Zero",
+      "steamId": 4162040,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4162040/22b56d833834d90674b30498f78e0839e48792db/header_alt_assets_2.jpg?t=1792533213",
+      "releaseDate": "2026-06-16",
+      "popularityOrder": 69,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 118,
+      "title": "Phasmophobia",
+      "steamId": 739630,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1793615120",
+      "releaseDate": "2020-09-18",
+      "popularityOrder": 70,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 119,
+      "title": "Aimlabs",
+      "steamId": 714010,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/714010/d5e9221e92990e5736994f070ffcd7c4e3af9345/header.jpg?t=1794000898",
+      "releaseDate": "2023-06-16",
+      "popularityOrder": 71,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 120,
+      "title": "Dressmaker",
+      "steamId": 4019220,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1794041965",
+      "releaseDate": "2026-09-21",
+      "popularityOrder": 72,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 121,
+      "title": "ARK: Survival Ascended",
+      "steamId": 2399830,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/d934813ca531af0fce69fe36bc972f1c90d1aa19/header.jpg?t=1793226168",
+      "releaseDate": "2023-10-25",
+      "popularityOrder": 73,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 122,
+      "title": "The Outlast Trials",
+      "steamId": 1304930,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/e3b17cf268afa51334b63124a2fe0aef3f1d136b/header_alt_assets_4.jpg?t=1792554994",
+      "releaseDate": "2024-03-05",
+      "popularityOrder": 74,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 123,
+      "title": "Once Human",
+      "steamId": 2139460,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/c18b08a2f93dec32fcc5fa71bc2da44ee42de1f0/header.jpg?t=1792640697",
+      "releaseDate": "2024-07-09",
+      "popularityOrder": 75,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 124,
+      "title": "Escape from Tarkov",
+      "steamId": 3932890,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3932890/4dd12ea3b00a4f8b67bfd629f3b9abbf8d5cab05/header_alt_assets_2.jpg?t=1785782094",
+      "releaseDate": "2025-11-15",
+      "popularityOrder": 76,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 125,
+      "title": "Balatro",
+      "steamId": 2379780,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
+      "releaseDate": "2024-02-20",
+      "popularityOrder": 77,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 126,
+      "title": "Bloons TD 6",
+      "steamId": 960090,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg?t=1782123772",
+      "releaseDate": "2018-12-17",
+      "popularityOrder": 78,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 127,
+      "title": "NBA 2K27",
+      "steamId": 4356430,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4356430/9152438fde7de9f4c20b4fd9072ba69f844dacab/header.jpg?t=1792163139",
+      "releaseDate": "2026-09-03",
+      "popularityOrder": 79,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 128,
+      "title": "Path of Exile 2",
+      "steamId": 2694490,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/4de5b38ea6defe96eb537cc99c001075aefd94a3/header.jpg?t=1794171104",
+      "releaseDate": "2024-12-06",
+      "popularityOrder": 80,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 129,
+      "title": "Warhammer 40,000: Space Marine 2",
+      "steamId": 2183900,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/header.jpg?t=1790874369",
+      "releaseDate": "2024-09-09",
+      "popularityOrder": 81,
+      "popularitySource": "Steam Most Played",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 130,
+      "title": "Call of Duty®: Modern Warfare® 4",
+      "steamId": 4435490,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/0c492be3204835d71e8b454b6eb1817f8ff68c0d/header.jpg?t=1793941334",
+      "releaseDate": "2026-10-22",
+      "popularityOrder": 82,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 131,
+      "title": "Casualties: Unknown",
+      "steamId": 4576490,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4576490/907888dce73f50c48410b5ab92971a0d95776b29/header.jpg?t=1794232782",
+      "releaseDate": "2026-11-09",
+      "popularityOrder": 83,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 132,
+      "title": "DREADMOOR",
+      "steamId": 3629430,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3629430/5b80c132b3479c69a92c25a5266db523850cfc36/header.jpg?t=1794233002",
+      "releaseDate": "2026-11-09",
+      "popularityOrder": 84,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 133,
+      "title": "PAYDAY 3",
+      "steamId": 1272080,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272080/1d66ef7e731a18e40b037d39618f7c3dfd614a90/header.jpg?t=1794297037",
+      "releaseDate": "2023-09-21",
+      "popularityOrder": 85,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 134,
+      "title": "Walk of Life",
+      "steamId": 1910150,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1910150/4a7243744b9da6900ba588d949339aa81e52c4a6/header_alt_assets_4.jpg?t=1794074550",
+      "releaseDate": "2026-04-30",
+      "popularityOrder": 86,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 135,
+      "title": "Assassin's Creed Black Flag Resynced",
+      "steamId": 3751950,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751950/8a128a3d00e5c23fd36443876a60e1b6d497fc7b/header_alt_assets_0.jpg?t=1793391152",
+      "releaseDate": "2026-07-09",
+      "popularityOrder": 87,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 136,
+      "title": "The Isle",
+      "steamId": 376210,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/376210/header.jpg?t=1653237914",
+      "releaseDate": "2015-12-01",
+      "popularityOrder": 88,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 137,
+      "title": "Scam With Your Friends",
+      "steamId": 4954910,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1794259275",
+      "releaseDate": "2026-10-15",
+      "popularityOrder": 89,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 138,
+      "title": "007 First Light",
+      "steamId": 3768760,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1793979129",
+      "releaseDate": "2026-05-26",
+      "popularityOrder": 90,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 139,
+      "title": "ZED ZONE",
+      "steamId": 1211600,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211600/aac7446006d1fb3898eccf697406d0c357cf20a3/header_alt_assets_2.jpg?t=1794210733",
+      "releaseDate": "2026-11-05",
+      "popularityOrder": 91,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 140,
+      "title": "Planet Zoo 2",
+      "steamId": 3219030,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/a5131aa4b84d04a55e3b9c561d7c886cc22bbe1c/header.jpg?t=1793011606",
+      "releaseDate": "2026-10-13",
+      "popularityOrder": 92,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 141,
+      "title": "Slap 'em UP!",
+      "steamId": 3703520,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3703520/bf682b6b4543d40495b96fa28d2f9610de3bbd91/header.jpg?t=1791279916",
+      "releaseDate": "2025-11-03",
+      "popularityOrder": 93,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 142,
+      "title": "Call of Duty®: Warzone™",
+      "steamId": 1962663,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962663/c5be0e42beb9bc881855e5d8cbac003576c0ab4c/header.jpg?t=1793941339",
+      "releaseDate": "2022-11-16",
+      "popularityOrder": 94,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 143,
+      "title": "Loftia",
+      "steamId": 2320980,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320980/header.jpg?t=1794115632",
+      "releaseDate": "2026-11-03",
+      "popularityOrder": 95,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 144,
+      "title": "Assassin’s Creed Shadows",
+      "steamId": 3159330,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/header.jpg?t=1792778493",
+      "releaseDate": "2025-03-19",
+      "popularityOrder": 96,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 145,
+      "title": "Mortal Shell II",
+      "steamId": 2584270,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584270/0a4c23b70ced29fac344186ea564dae67c80cfd6/header.jpg?t=1794241756",
+      "releaseDate": "2026-08-20",
+      "popularityOrder": 97,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 243,
+      "title": "ArcheAge Chronicles",
+      "steamId": 3218230,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3218230/header.jpg?t=1793752512",
+      "releaseDate": "2026-11-03",
+      "popularityOrder": 98,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 244,
+      "title": "Company of Heroes 3",
+      "steamId": 1677280,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/c976601786c762d0bae9beafb205190d2cb3151c/header_alt_assets_7.jpg?t=1793906688",
+      "releaseDate": "2023-02-23",
+      "popularityOrder": 99,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 245,
+      "title": "Microsoft Flight Simulator 2024",
+      "steamId": 2537590,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2537590/header.jpg?t=1791557822",
+      "releaseDate": "2024-11-19",
+      "popularityOrder": 100,
+      "popularitySource": "Steam Top Sellers (TH)",
+      "popularityUpdatedAt": "2026-11-10T08:32:35.297073Z"
+    },
+    {
+      "id": 19,
+      "title": "Upwardly",
+      "steamId": 5427130,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5427130/b95007f6bdf51b3688c61e5f91127991261ee937/capsule_616x353.jpg?t=1794288002",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 18,
+      "title": "Geo Bobs",
+      "steamId": 5184160,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5184160/7dfca664b80cb0bd004289efae7c9d72cc0ad1dd/capsule_616x353.jpg?t=1794286834",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 17,
+      "title": "Mool: Chroma",
+      "steamId": 5156510,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5156510/f541bdab35a7fbb2f1b2dbe9ae50df6a744e075b/capsule_616x353.jpg?t=1794290726",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 16,
+      "title": "ZOLGE STATION: HUGA Waiwai Academy",
+      "steamId": 5466110,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5466110/46654d6b228abf100882aae7a9b32368ceb4e5ea/capsule_616x353.jpg?t=1794284863",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 15,
+      "title": "Vinculum",
+      "steamId": 5065500,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5065500/f953770c0e1c3c60c1a3703f5f61489c394d16de/capsule_616x353.jpg?t=1794282979",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 14,
+      "title": "Memento Dawn",
+      "steamId": 2319360,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2319360/ba1d28dfaee27735c99fbf20c0916362b5a9e3fd/capsule_616x353.jpg?t=1794282823",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 13,
+      "title": "Santa's Workshop: Tidy Up Christmas",
+      "steamId": 5287500,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5287500/76e1cc19fac385d93417f5e05bbb5cfa84c066e8/capsule_616x353.jpg?t=1794282429",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 12,
+      "title": "Wild Crazy 8s",
+      "steamId": 4878180,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4878180/6e51f62d13ebc243dd4b1adb8305e6440c832cb3/capsule_616x353.jpg?t=1794281354",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 11,
+      "title": "Vida:Unslain",
+      "steamId": 4575700,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4575700/63309c01b2637e940d6530069ab91ece14040286/capsule_616x353.jpg?t=1794280857",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 10,
+      "title": "1999TOKOYO Building",
+      "steamId": 4099810,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4099810/516cac1c541272715f23c9db6c5f8f09316457eb/capsule_616x353.jpg?t=1794279450",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 9,
+      "title": "Hair Removal Salon Simulator",
+      "steamId": 4351380,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4351380/2a6edccd3bff2898c605b2d2d6793ded8a1a0013/capsule_616x353.jpg?t=1794279121",
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "id": 8,
+      "title": "CLETTER Homophone Word Spelling",
+      "steamId": 5302590,
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5302590/195ca0000c9e1cf45bb3293dfc315cb8c8d12957/capsule_616x353.jpg?t=1794278950",
+      "releaseDate": "2026-11-09"
+    }
+  ]
+}

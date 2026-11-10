@@ -6,26 +6,726 @@
       "name": "desktop",
       "width": 1366,
       "height": 900,
-      "loadedCovers": 12,
+      "loadedCovers": 112,
       "pageWidth": 1366
     },
     {
       "name": "mobile",
       "width": 390,
       "height": 844,
-      "loadedCovers": 12,
+      "loadedCovers": 112,
       "pageWidth": 390
     },
     {
       "name": "narrow",
       "width": 320,
       "height": 720,
-      "loadedCovers": 12,
+      "loadedCovers": 112,
       "pageWidth": 320
     }
   ],
   "pageErrors": [],
   "games": [
+    {
+      "title": "Counter-Strike 2",
+      "steamId": 730,
+      "releaseDate": "2012-08-21",
+      "popularityOrder": 1,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Dota 2",
+      "steamId": 570,
+      "releaseDate": "2013-07-09",
+      "popularityOrder": 2,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "PUBG: BATTLEGROUNDS",
+      "steamId": 578080,
+      "releaseDate": "2017-12-21",
+      "popularityOrder": 3,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Phantom Blade Zero",
+      "steamId": 4115450,
+      "releaseDate": "2026-10-28",
+      "popularityOrder": 4,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Call of Duty®",
+      "steamId": 1938090,
+      "releaseDate": "2022-10-27",
+      "popularityOrder": 5,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Apex Legends™",
+      "steamId": 1172470,
+      "releaseDate": "2020-11-04",
+      "popularityOrder": 6,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "ROB RUN",
+      "steamId": 4262460,
+      "releaseDate": "2026-11-04",
+      "popularityOrder": 7,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Slay the Spire 2",
+      "steamId": 2868840,
+      "releaseDate": "2026-03-05",
+      "popularityOrder": 8,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+      "steamId": 4348910,
+      "releaseDate": "2026-10-28",
+      "popularityOrder": 9,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "War Thunder",
+      "steamId": 236390,
+      "releaseDate": "2013-08-15",
+      "popularityOrder": 10,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Geometry Dash",
+      "steamId": 322170,
+      "releaseDate": "2014-12-22",
+      "popularityOrder": 11,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Tom Clancy's Rainbow Six Siege",
+      "steamId": 359550,
+      "releaseDate": "2015-12-01",
+      "popularityOrder": 12,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Warframe",
+      "steamId": 230410,
+      "releaseDate": "2013-03-25",
+      "popularityOrder": 13,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Overwatch®",
+      "steamId": 2357570,
+      "releaseDate": "2023-08-10",
+      "popularityOrder": 14,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "The Binding of Isaac: Rebirth",
+      "steamId": 250900,
+      "releaseDate": "2014-11-04",
+      "popularityOrder": 15,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Limbus Company",
+      "steamId": 1973530,
+      "releaseDate": "2023-02-26",
+      "popularityOrder": 16,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "R.E.P.O.",
+      "steamId": 3241660,
+      "releaseDate": "2025-02-26",
+      "popularityOrder": 17,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Stardew Valley",
+      "steamId": 413150,
+      "releaseDate": "2016-02-26",
+      "popularityOrder": 18,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "WARDOGS",
+      "steamId": 1867240,
+      "releaseDate": "2026-09-10",
+      "popularityOrder": 19,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "HELLDIVERS™ 2",
+      "steamId": 553850,
+      "releaseDate": "2024-02-08",
+      "popularityOrder": 20,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Team Fortress 2",
+      "steamId": 440,
+      "releaseDate": "2007-10-10",
+      "popularityOrder": 21,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Delta Force",
+      "steamId": 2507950,
+      "releaseDate": "2024-12-04",
+      "popularityOrder": 22,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Battlefield™ 6",
+      "steamId": 2807960,
+      "releaseDate": "2025-10-10",
+      "popularityOrder": 23,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "ARC Raiders",
+      "steamId": 1808500,
+      "releaseDate": "2025-10-30",
+      "popularityOrder": 24,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Terraria",
+      "steamId": 105600,
+      "releaseDate": "2011-05-16",
+      "popularityOrder": 25,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Left 4 Dead 2",
+      "steamId": 550,
+      "releaseDate": "2009-11-16",
+      "popularityOrder": 26,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Euro Truck Simulator 2",
+      "steamId": 227300,
+      "releaseDate": "2012-10-12",
+      "popularityOrder": 27,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "VRChat",
+      "steamId": 438100,
+      "releaseDate": "2017-02-01",
+      "popularityOrder": 28,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Grand Theft Auto V Legacy",
+      "steamId": 271590,
+      "releaseDate": "2015-04-13",
+      "popularityOrder": 29,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Project Zomboid",
+      "steamId": 108600,
+      "releaseDate": "2013-11-08",
+      "popularityOrder": 30,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Valheim",
+      "steamId": 892970,
+      "releaseDate": "2026-09-09",
+      "popularityOrder": 31,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "BeamNG.drive",
+      "steamId": 284160,
+      "releaseDate": "2015-05-29",
+      "popularityOrder": 32,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "NARAKA: BLADEPOINT",
+      "steamId": 1203220,
+      "releaseDate": "2021-08-11",
+      "popularityOrder": 33,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Don't Starve Together",
+      "steamId": 322330,
+      "releaseDate": "2016-04-21",
+      "popularityOrder": 34,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Aniimo",
+      "steamId": 4126040,
+      "releaseDate": "2026-09-15",
+      "popularityOrder": 35,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "EA SPORTS FC™ 27",
+      "steamId": 4080220,
+      "releaseDate": "2026-09-24",
+      "popularityOrder": 36,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Rocket League®",
+      "steamId": 252950,
+      "releaseDate": "2015-07-06",
+      "popularityOrder": 37,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Enshrouded",
+      "steamId": 1203620,
+      "releaseDate": "2026-10-15",
+      "popularityOrder": 38,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Hearts of Iron IV",
+      "steamId": 394360,
+      "releaseDate": "2016-06-06",
+      "popularityOrder": 39,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "The Elder Scrolls V: Skyrim Special Edition",
+      "steamId": 489830,
+      "releaseDate": "2016-10-27",
+      "popularityOrder": 40,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "EA SPORTS FC™ 26",
+      "steamId": 3405690,
+      "releaseDate": "2025-09-25",
+      "popularityOrder": 41,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Garry's Mod",
+      "steamId": 4000,
+      "releaseDate": "2006-11-29",
+      "popularityOrder": 42,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "eFootball™",
+      "steamId": 1665460,
+      "releaseDate": "2021-09-29",
+      "popularityOrder": 43,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Moon Sweepers",
+      "steamId": 5335510,
+      "releaseDate": "2026-10-23",
+      "popularityOrder": 44,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "PEAK",
+      "steamId": 3527290,
+      "releaseDate": "2025-06-16",
+      "popularityOrder": 45,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Bongo Cat",
+      "steamId": 3419430,
+      "releaseDate": "2025-03-05",
+      "popularityOrder": 46,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Brotato",
+      "steamId": 1942280,
+      "releaseDate": "2023-06-23",
+      "popularityOrder": 47,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Farming Simulator 25",
+      "steamId": 2300320,
+      "releaseDate": "2024-11-12",
+      "popularityOrder": 48,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "TBH: Task Bar Hero",
+      "steamId": 3678970,
+      "releaseDate": "2026-05-27",
+      "popularityOrder": 49,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Total War: WARHAMMER III",
+      "steamId": 1142710,
+      "releaseDate": "2022-02-16",
+      "popularityOrder": 50,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "ELDEN RING",
+      "steamId": 1245620,
+      "releaseDate": "2022-02-24",
+      "popularityOrder": 51,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Street Fighter™ 6",
+      "steamId": 1364780,
+      "releaseDate": "2023-06-01",
+      "popularityOrder": 52,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "DayZ",
+      "steamId": 221100,
+      "releaseDate": "2018-12-13",
+      "popularityOrder": 53,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Forza Horizon 6",
+      "steamId": 2483190,
+      "releaseDate": "2026-05-18",
+      "popularityOrder": 54,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Palworld",
+      "steamId": 1623730,
+      "releaseDate": "2026-07-09",
+      "popularityOrder": 55,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Sid Meier’s Civilization® VI",
+      "steamId": 289070,
+      "releaseDate": "2016-10-20",
+      "popularityOrder": 56,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "RimWorld",
+      "steamId": 294100,
+      "releaseDate": "2018-10-17",
+      "popularityOrder": 57,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Crimson Desert Enhanced",
+      "steamId": 3321460,
+      "releaseDate": "2026-03-19",
+      "popularityOrder": 58,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "THE FINALS",
+      "steamId": 2073850,
+      "releaseDate": "2023-12-07",
+      "popularityOrder": 59,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Age of Empires II: Definitive Edition",
+      "steamId": 813780,
+      "releaseDate": "2019-11-14",
+      "popularityOrder": 60,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Brawlhalla",
+      "steamId": 291550,
+      "releaseDate": "2017-10-17",
+      "popularityOrder": 61,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Arena Breakout: Infinite",
+      "steamId": 2073620,
+      "releaseDate": "2025-09-15",
+      "popularityOrder": 62,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Destiny 2",
+      "steamId": 1085660,
+      "releaseDate": "2019-10-01",
+      "popularityOrder": 63,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Assetto Corsa",
+      "steamId": 244210,
+      "releaseDate": "2014-12-19",
+      "popularityOrder": 64,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "7 Days to Die",
+      "steamId": 251570,
+      "releaseDate": "2024-07-25",
+      "popularityOrder": 65,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Mount & Blade II: Bannerlord",
+      "steamId": 261550,
+      "releaseDate": "2022-10-25",
+      "popularityOrder": 66,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Monster Hunter Wilds",
+      "steamId": 2246340,
+      "releaseDate": "2025-02-27",
+      "popularityOrder": 67,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Hunt: Showdown 1896",
+      "steamId": 594650,
+      "releaseDate": "2019-08-27",
+      "popularityOrder": 68,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Zenless Zone Zero",
+      "steamId": 4162040,
+      "releaseDate": "2026-06-16",
+      "popularityOrder": 69,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Phasmophobia",
+      "steamId": 739630,
+      "releaseDate": "2020-09-18",
+      "popularityOrder": 70,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Aimlabs",
+      "steamId": 714010,
+      "releaseDate": "2023-06-16",
+      "popularityOrder": 71,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Dressmaker",
+      "steamId": 4019220,
+      "releaseDate": "2026-09-21",
+      "popularityOrder": 72,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "ARK: Survival Ascended",
+      "steamId": 2399830,
+      "releaseDate": "2023-10-25",
+      "popularityOrder": 73,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "The Outlast Trials",
+      "steamId": 1304930,
+      "releaseDate": "2024-03-05",
+      "popularityOrder": 74,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Once Human",
+      "steamId": 2139460,
+      "releaseDate": "2024-07-09",
+      "popularityOrder": 75,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Escape from Tarkov",
+      "steamId": 3932890,
+      "releaseDate": "2025-11-15",
+      "popularityOrder": 76,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Balatro",
+      "steamId": 2379780,
+      "releaseDate": "2024-02-20",
+      "popularityOrder": 77,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Bloons TD 6",
+      "steamId": 960090,
+      "releaseDate": "2018-12-17",
+      "popularityOrder": 78,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "NBA 2K27",
+      "steamId": 4356430,
+      "releaseDate": "2026-09-03",
+      "popularityOrder": 79,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Path of Exile 2",
+      "steamId": 2694490,
+      "releaseDate": "2024-12-06",
+      "popularityOrder": 80,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Warhammer 40,000: Space Marine 2",
+      "steamId": 2183900,
+      "releaseDate": "2024-09-09",
+      "popularityOrder": 81,
+      "popularitySource": "Steam Most Played"
+    },
+    {
+      "title": "Call of Duty®: Modern Warfare® 4",
+      "steamId": 4435490,
+      "releaseDate": "2026-10-22",
+      "popularityOrder": 82,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Casualties: Unknown",
+      "steamId": 4576490,
+      "releaseDate": "2026-11-09",
+      "popularityOrder": 83,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "DREADMOOR",
+      "steamId": 3629430,
+      "releaseDate": "2026-11-09",
+      "popularityOrder": 84,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "PAYDAY 3",
+      "steamId": 1272080,
+      "releaseDate": "2023-09-21",
+      "popularityOrder": 85,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Walk of Life",
+      "steamId": 1910150,
+      "releaseDate": "2026-04-30",
+      "popularityOrder": 86,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Assassin's Creed Black Flag Resynced",
+      "steamId": 3751950,
+      "releaseDate": "2026-07-09",
+      "popularityOrder": 87,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "The Isle",
+      "steamId": 376210,
+      "releaseDate": "2015-12-01",
+      "popularityOrder": 88,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Scam With Your Friends",
+      "steamId": 4954910,
+      "releaseDate": "2026-10-15",
+      "popularityOrder": 89,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "007 First Light",
+      "steamId": 3768760,
+      "releaseDate": "2026-05-26",
+      "popularityOrder": 90,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "ZED ZONE",
+      "steamId": 1211600,
+      "releaseDate": "2026-11-05",
+      "popularityOrder": 91,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Planet Zoo 2",
+      "steamId": 3219030,
+      "releaseDate": "2026-10-13",
+      "popularityOrder": 92,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Slap 'em UP!",
+      "steamId": 3703520,
+      "releaseDate": "2025-11-03",
+      "popularityOrder": 93,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Call of Duty®: Warzone™",
+      "steamId": 1962663,
+      "releaseDate": "2022-11-16",
+      "popularityOrder": 94,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Loftia",
+      "steamId": 2320980,
+      "releaseDate": "2026-11-03",
+      "popularityOrder": 95,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Assassin’s Creed Shadows",
+      "steamId": 3159330,
+      "releaseDate": "2025-03-19",
+      "popularityOrder": 96,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Mortal Shell II",
+      "steamId": 2584270,
+      "releaseDate": "2026-08-20",
+      "popularityOrder": 97,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "ArcheAge Chronicles",
+      "steamId": 3218230,
+      "releaseDate": "2026-11-03",
+      "popularityOrder": 98,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Company of Heroes 3",
+      "steamId": 1677280,
+      "releaseDate": "2023-02-23",
+      "popularityOrder": 99,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
+    {
+      "title": "Microsoft Flight Simulator 2024",
+      "steamId": 2537590,
+      "releaseDate": "2024-11-19",
+      "popularityOrder": 100,
+      "popularitySource": "Steam Top Sellers (TH)"
+    },
     {
       "title": "Upwardly",
       "steamId": 5427130,
