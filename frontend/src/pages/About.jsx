@@ -30,11 +30,25 @@ export default function About() {
       <section className="about-section">
         <h2>แหล่งข้อมูล</h2>
         <p>
-          ข้อมูลเกมและภาพจาก{' '}
+          เกมออกใหม่ ภาพ วันที่วางจำหน่าย และแท็กจาก{' '}
+          <a
+            className="inline-link"
+            href="https://store.steampowered.com/explore/new/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Steam New Releases
+          </a>{' '}
+          อัปเดตโดยผู้ดูแล และรองรับข้อมูลจาก{' '}
           <a className="inline-link" href="https://rawg.io" target="_blank" rel="noreferrer">
             RAWG
           </a>{' '}
           ส่วนคำอธิบายเพิ่มเติมจัดการโดยผู้ดูแล GameMatch
+        </p>
+        <p className="muted">
+          คลังเรียงตามวันที่วางจำหน่ายที่แหล่งข้อมูลระบุ เป็นรายการที่นำเข้าล่าสุด
+          ไม่ครอบคลุมเกมทั้งหมดหรืออัปเดตอัตโนมัติ GameMatch เป็นโปรเจกต์อิสระ
+          ข้อมูลและภาพเป็นของเจ้าของสิทธิ์แต่ละเกม
         </p>
         <p className="muted">
           รายการที่ขึ้นต้นด้วย Demo: เป็นเกมสมมติสำหรับทดสอบระบบ ไม่ใช่ข้อมูลเกมจริง

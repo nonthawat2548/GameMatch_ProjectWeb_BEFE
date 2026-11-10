@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { api } from '../api/backend';
 import { useAuth } from '../auth/AuthContext';
 import { genreLabel } from '../utils/gameLabels';
+import { gameSource, gameDate } from '../utils/gameSource';
 export default function Detail() {
   const { id } = useParams();
   // เปลี่ยนเกมแล้วสร้าง state ใหม่ ป้องกันผลคำขอของเกมก่อนหน้าค้างในหน้าใหม่
@@ -50,6 +51,8 @@ function DetailContent({ id }) {
         {error && <button onClick={() => setRetry((n) => n + 1)}>ลองใหม่</button>}
       </>
     );
+  const source = gameSource(game);
+  const released = gameDate(game.releaseDate);
   return (
     <>
       <Link className="back-link" to="/discover">
@@ -74,6 +77,14 @@ function DetailContent({ id }) {
           <h1>{game.title}</h1>
           <p className="detail-description">{game.description || 'ยังไม่มีคำอธิบายเพิ่มเติม'}</p>
           <dl className="game-facts">
+            {released && (
+              <div>
+                <dt>วางจำหน่าย</dt>
+                <dd>
+                  <time dateTime={game.releaseDate}>{released}</time>
+                </dd>
+              </div>
+            )}
             <div>
               <dt>แนวเกม</dt>
               <dd>{game.genres.map(genreLabel).join(' / ') || 'ยังไม่มีข้อมูล'}</dd>
@@ -99,11 +110,11 @@ function DetailContent({ id }) {
               เข้าสู่ระบบเพื่อบันทึกเกม
             </Link>
           )}
-          {game.rawgId && (
+          {source && (
             <p className="detail-source">
               ข้อมูลและภาพจาก{' '}
-              <a href={`https://rawg.io/games/${game.rawgId}`} target="_blank" rel="noreferrer">
-                RAWG
+              <a href={source.href} target="_blank" rel="noreferrer">
+                {source.name}
               </a>
             </p>
           )}

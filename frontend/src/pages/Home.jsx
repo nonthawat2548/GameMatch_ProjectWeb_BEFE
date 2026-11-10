@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api/backend';
 import GameGrid from '../components/GameGrid';
+import { gameDate } from '../utils/gameSource';
 
 export default function Home() {
   const [games, setGames] = useState([]);
@@ -28,6 +29,8 @@ export default function Home() {
     };
   }, [retry]);
 
+  const steamSync = games.find((game) => game.steamId && game.syncedAt)?.syncedAt;
+  const syncedOn = gameDate(steamSync?.slice(0, 10));
   return (
     <>
       <section className="home-intro">
@@ -43,9 +46,12 @@ export default function Home() {
         </div>
       </section>
       <section aria-labelledby="home-games-heading" aria-busy={loading}>
+        {syncedOn && <p className="muted">ข้อมูล Steam อัปเดต {syncedOn}</p>}
         <div className="section-head">
           <div>
-            <h2 id="home-games-heading">เลือกดูจากคลังเกม</h2>
+            <h2 id="home-games-heading">
+              {games.some((game) => game.steamId) ? 'เกมออกใหม่จาก Steam' : 'เลือกดูจากคลังเกม'}
+            </h2>
             <p className="muted">ดูรายละเอียดก่อนเก็บเกมที่สนใจไว้ในรายการเกมโปรด</p>
           </div>
           <Link className="inline-link" to="/discover">

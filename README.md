@@ -2,7 +2,7 @@
 
 โปรเจกต์พื้นฐานเว็บแนะนำเกม: React + Go net/http + PostgreSQL ครบเส้นทาง Guest / Member / Admin มี SQL, RAWG sync และพรอมต์ส่งต่องานให้ Codex
 
-**สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย ข้อมูลเริ่มต้นยังเป็นเกมสมมติ `Demo:` เพราะยังไม่มี RAWG API key ของทีม ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
+**สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย นำเข้าเกมจริงพร้อมภาพ/วันที่จาก Steam New Releases แล้ว 12 เกม และซ่อน Demo เดิมโดยไม่ลบข้อมูล RAWG ยังเป็นแหล่งเสริมที่ต้องตั้ง key ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
 
 อัปเดต 10 พ.ย. 2569: frontend ผ่าน format, 13 suites / 82 tests และ production build; headless QA ผ่านทั้ง API จำลองและเส้นทาง React → Go → Supabase จริง รวมสมัครสมาชิก รายการโปรดสองบัญชี Preferences, Profile/Password และ Admin ไม่มีการเปิดหน้าต่างหรือควบคุมจอผู้ใช้ สร้าง `gamematch-db` ใหม่ตามที่ผู้ใช้ยืนยัน โดยไม่แตะ MovieHub และใช้ repo `nonthawat2548/GameMatch_ProjectWeb_BEFE` ผล Go/DB และข้อจำกัดอยู่ใน `docs/evidence/`
 
@@ -17,6 +17,7 @@
 - สมัคร/เข้า/ออกระบบ, JWT + bcrypt, Profile, เปลี่ยนรหัสผ่าน
 - Favorites รายบุคคล, บันทึก Preference
 - Admin เพิ่ม/แก้/ลบ/ซ่อนเกม; Sync RAWG 40 เกมหน้าแรก
+- Admin อัปเดต Steam New Releases สูงสุด 12 เกมต่อครั้ง พร้อมภาพ แท็ก วันที่ และลิงก์ร้าน ไม่ต้องใช้ RAWG key; ล้มเหลวจะไม่เขียนข้อมูลบางส่วน
 - React Tests ของ Quiz และ Route authorization; Go scoring tests
 - React tests ของ Admin CRUD/Sync, Register/Login/Profile/Favorites, การตรวจ UTF-8 bytes และเส้นทางใช้งานทั้ง App
 - Tailwind 3 + custom CSS, responsive พื้นสว่าง ตัวอักษรกรมท่า แต้มสีม่วง อิงโครงเรียบแบบ MovieHub ตามที่ผู้ใช้ขอ ไม่ใช้ Vite

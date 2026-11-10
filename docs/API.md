@@ -22,6 +22,7 @@ Error ทุก handler: `{ "error": "ข้อความ" }` ยกเว้�
 | PUT | /api/admin/games/{id} | Admin | Game body -> id |
 | DELETE | /api/admin/games/{id} | Admin | ok; ลบ favorites ที่อ้างอิงด้วย cascade |
 | POST | /api/admin/sync | Admin | imported,note; RAWG first page 40 |
+| POST | /api/admin/sync/steam | Admin | imported,note; Steam New Releases up to 12 eligible games, no RAWG key |
 
 Member includes Admin. No endpoint accepts member_id from frontend for ownership.
 
@@ -37,6 +38,8 @@ Game create example:
 {"title":"Example","description":"Example description","imageUrl":"","genres":["rpg"],"tags":["singleplayer","story-rich"],"platforms":["PC"],"isPublished":true}
 ```
 Game response adds id, optional rawgId, matchScore, optional reasons. On PUT backend uses path id; role/owner never inferred from client body. Image URL if supplied must be HTTPS.
+
+Steam responses also include `steamId`, ISO `releaseDate` (YYYY-MM-DD), and `syncedAt` (UTC timestamp). Catalog sorts release date descending, then id, with undated manual/RAWG records last. Steam sync reads the public Store New Releases feed for Thailand/English, inspects at most 20 candidates, and imports at most 12 released full games with valid Steam image/date and Store tags. Excludes DLC, coming-soon/future/ambiguous dates, missing tag pages and explicit sexual-content tags. Generic multiplayer never becomes co-op. HTML descriptions are converted to text; React never renders unsafe HTML. These public Store endpoints are not a documented/versioned Steamworks contract, so parsing/upstream failures return 502 and retain existing data. All writes use one transaction and unique steam_id; existing descriptions/publication are preserved. Sync is manual, not scheduled, and does not claim all new releases worldwide.
 
 HTTP: 400 validation, 401 missing/expired/revoked token, 403 wrong role/origin, 404 missing record, 409 duplicate/concurrent operation, 500 DB failure, 502 upstream failure, 503 RAWG key missing/DB unavailable.
 

@@ -28,6 +28,19 @@ function submit() {
   fireEvent.click(screen.getByRole('button', { name: 'บันทึกเกม' }));
 }
 
+test('imports Steam new releases and reloads the persisted catalog', async () => {
+  api
+    .mockResolvedValueOnce([])
+    .mockResolvedValueOnce({ imported: 12 })
+    .mockResolvedValueOnce([game]);
+  render(<Admin />);
+  await screen.findByText('ยังไม่มีเกม กด Sync หรือเพิ่มข้อมูลด้านบน');
+  fireEvent.click(screen.getByRole('button', { name: 'อัปเดตเกมออกใหม่ Steam' }));
+  expect(await screen.findByRole('status')).toHaveTextContent('อัปเดตจาก Steam 12 เกมแล้ว');
+  expect(api).toHaveBeenCalledWith('/api/admin/sync/steam', { method: 'POST' });
+  expect(await screen.findByText(game.title)).toBeInTheDocument();
+});
+
 test('retries a failed initial catalog request', async () => {
   api.mockRejectedValueOnce(new Error('Catalog offline')).mockResolvedValueOnce([game]);
   render(<Admin />);

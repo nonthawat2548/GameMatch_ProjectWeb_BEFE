@@ -110,7 +110,11 @@ function Shell() {
         <div className="footer-inner">
           <span>GameMatch</span>
           <p>
-            ข้อมูลเกมและภาพจาก{' '}
+            แหล่งข้อมูล{' '}
+            <a href="https://store.steampowered.com/explore/new/" target="_blank" rel="noreferrer">
+              Steam
+            </a>
+            {' · '}
             <a href="https://rawg.io" target="_blank" rel="noreferrer">
               RAWG
             </a>

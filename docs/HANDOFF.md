@@ -2,6 +2,10 @@
 
 Data path: React state/form -> api/backend.js fetch -> Go handler -> Guard JWT/current DB role -> store pgxpool SQL -> Supabase PostgreSQL -> JSON -> React state/UI.
 
+## Latest catalog change — 10 November 2026
+
+The user asked for real recent Steam/other games and images rather than empty Demo placeholders. Added `handler/steam.go`, guarded `POST /api/admin/sync/steam`, and steam_id/release_date/synced_at via an additive migration. Real Go import persisted 12 Steam New Releases with Store images/tags/release dates. The four original Demo rows were hidden by exact IDs/titles, not deleted. Main catalog sorts by release date; cards/detail link to Steam and display dates; Home identifies Steam releases; Admin has a manual Steam update button. RAWG remains optional and unchanged. Public Store endpoints are verified HTTP integrations, not an official stable/versioned Steamworks API guarantee; fail safely and retain old data on changes. Keep source attribution, never infer co-op from multiplayer, never invent style tags. Source snapshot: evidence/steam-catalog.json. The user's chosen registered account has already been promoted to Admin and verified; no need to ask for Admin email again.
+
 ## Latest backend handoff — 10 November 2026
 
 The user asked to finish the project after the frontend phase. A new dedicated Supabase project `gamematch-db` (`mcwhgbiodyqotfgwzgkd`, Singapore) was created in `nonthawat2548's Org` after explicit $0/month confirmation; schema and four Demo seeds applied. Go connects through the verified session pooler with a scoped backend role, separate from the QA schema owner. `backend/.env` is configured locally and ignored. `scripts/Start-Backend.ps1` explicitly imports that file; Go itself still does not auto-load env files.

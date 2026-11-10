@@ -21,3 +21,9 @@ responses in that test are controlled fixtures, not live RAWG data.
 
 Rate-limit tests cover concurrent attempts, expiry, separate peers, bounded memory
 and forged forwarding headers. Sync tests reject missing/oversized/malformed data.
+
+Steam tests cover source mapping, released-game/date/tag checks, admin-only routes,
+duplicate-safe updates, preservation of descriptions/visibility, and SQL rollback.
+`TestLiveSteamImport` is **skipped by default**: setting GM_STEAM_IMPORT=1 and
+DATABASE_URL explicitly imports real Steam data into that real database. It is
+not a disposable-schema test; use it only for an intended GameMatch catalog update.

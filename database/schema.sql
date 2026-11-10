@@ -12,6 +12,10 @@ CREATE TABLE IF NOT EXISTS gm_games (
  genres TEXT[] NOT NULL DEFAULT '{}', tags TEXT[] NOT NULL DEFAULT '{}',
  platforms TEXT[] NOT NULL DEFAULT '{}', is_published BOOLEAN NOT NULL DEFAULT TRUE
 );
+-- Safe to rerun when upgrading the original starter database.
+ALTER TABLE gm_games ADD COLUMN IF NOT EXISTS steam_id BIGINT UNIQUE;
+ALTER TABLE gm_games ADD COLUMN IF NOT EXISTS release_date DATE;
+ALTER TABLE gm_games ADD COLUMN IF NOT EXISTS synced_at TIMESTAMPTZ;
 CREATE TABLE IF NOT EXISTS gm_favorites (
  member_id BIGINT REFERENCES gm_members(id) ON DELETE CASCADE,
  game_id BIGINT REFERENCES gm_games(id) ON DELETE CASCADE,

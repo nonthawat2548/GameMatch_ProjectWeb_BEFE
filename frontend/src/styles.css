@@ -214,6 +214,14 @@ p {
 .section-head h1 {
   margin: 0;
 }
+.admin-sync-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.admin-sync-actions button {
+  margin: 0;
+}
 .game-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

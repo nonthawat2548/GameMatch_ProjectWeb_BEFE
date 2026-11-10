@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { genreLabel } from '../utils/gameLabels';
+import { gameSource, gameDate } from '../utils/gameSource';
 
 export default function GameCard({ game, action }) {
   const [failedImage, setFailedImage] = useState('');
+  const source = gameSource(game);
+  const released = gameDate(game.releaseDate);
   return (
     <article className="game-card">
       <Link
@@ -38,14 +41,14 @@ export default function GameCard({ game, action }) {
           </p>
         ))}
         <p className="muted">{game.platforms.join(' · ') || 'ยังไม่มีข้อมูลแพลตฟอร์ม'}</p>
-        {game.rawgId && (
-          <a
-            className="source-link"
-            href={'https://rawg.io/games/' + game.rawgId}
-            target="_blank"
-            rel="noreferrer"
-          >
-            ข้อมูลและภาพจาก RAWG ↗
+        {released && (
+          <p className="muted">
+            วางจำหน่าย <time dateTime={game.releaseDate}>{released}</time>
+          </p>
+        )}
+        {source && (
+          <a className="source-link" href={source.href} target="_blank" rel="noreferrer">
+            ข้อมูลและภาพจาก {source.name} ↗
           </a>
         )}
         {action}

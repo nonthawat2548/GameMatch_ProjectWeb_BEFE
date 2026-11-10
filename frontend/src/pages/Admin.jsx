@@ -99,20 +99,35 @@ export default function Admin() {
         <div>
           <h1>จัดการคลังเกม</h1>
         </div>
-        <button
-          disabled={busy || games === null}
-          onClick={() =>
-            task(async () => {
-              const d = await api('/api/admin/sync', { method: 'POST' });
-              setNote(`Sync ${d.imported} เกมแล้ว`);
-            })
-          }
-        >
-          Sync RAWG (40 เกม)
-        </button>
+        <div className="admin-sync-actions">
+          <button
+            disabled={busy || games === null}
+            onClick={() =>
+              task(async () => {
+                const d = await api('/api/admin/sync/steam', { method: 'POST' });
+                setNote(`อัปเดตจาก Steam ${d.imported} เกมแล้ว`);
+              })
+            }
+          >
+            อัปเดตเกมออกใหม่ Steam
+          </button>
+          <button
+            className="secondary"
+            disabled={busy || games === null}
+            onClick={() =>
+              task(async () => {
+                const d = await api('/api/admin/sync', { method: 'POST' });
+                setNote(`Sync ${d.imported} เกมแล้ว`);
+              })
+            }
+          >
+            Sync RAWG (40 เกม)
+          </button>
+        </div>
       </div>
       <p className="muted">
-        Sync จะอัปเดตข้อมูลหน้าแรกจาก RAWG และคงสถานะเผยแพร่กับคำอธิบายที่ Admin แก้ไว้
+        Steam นำเข้ารายการ New Releases พร้อมภาพสูงสุด 12 เกมต่อครั้ง
+        โดยคงสถานะเผยแพร่และคำอธิบายที่ผู้ดูแลแก้ไว้ ส่วน RAWG ต้องตั้ง API key บน backend ก่อนใช้
       </p>
       {error && <p role="alert">{error}</p>}
       {error && (

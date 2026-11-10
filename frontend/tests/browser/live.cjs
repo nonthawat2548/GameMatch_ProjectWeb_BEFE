@@ -204,13 +204,25 @@ async function run() {
     });
     const page = await context.newPage();
     page.setDefaultTimeout(15000);
+    const catalog = await call('GET', '/api/games');
+    assert(catalog.length > 0, 'live catalog is empty');
+    const recommendations = await call('POST', '/api/recommendations', null, {
+      genre: 'rpg',
+      mode: 'solo',
+      style: 'story',
+    });
+    assert(recommendations.length > 0, 'no recommendation available for the QA journey');
+    const chosenGame = recommendations[0];
     await page.goto(origin + '/discover');
-    await page.getByRole('link', { name: 'Demo: Story Quest', exact: true }).waitFor();
+    await page.getByRole('link', { name: catalog[0].title, exact: true }).waitFor();
     await capture(page, 'desktop-catalog-supabase');
     await page.getByRole('link', { name: 'แนะนำเกม', exact: true }).click();
     await page.getByRole('button', { name: 'แนะนำเกมให้ฉัน' }).click();
-    await page.getByText('ตรงกับความชอบ 100/100', { exact: true }).waitFor();
-    await page.getByRole('link', { name: 'Demo: Story Quest', exact: true }).click();
+    await page
+      .getByText(`ตรงกับความชอบ ${chosenGame.matchScore}/100`, { exact: true })
+      .first()
+      .waitFor();
+    await page.getByRole('link', { name: chosenGame.title, exact: true }).click();
     await page.getByRole('link', { name: 'เข้าสู่ระบบเพื่อบันทึกเกม' }).click();
     await page.getByRole('link', { name: 'สร้างบัญชีใหม่' }).click();
     await page.getByLabel('ชื่อที่แสดง').fill('Demo: QA member');
@@ -218,16 +230,16 @@ async function run() {
     await page.getByLabel('รหัสผ่าน', { exact: true }).fill(password);
     dataMayExist = true;
     await page.getByRole('button', { name: 'สมัครและเข้าสู่ระบบ' }).click();
-    await page.getByRole('heading', { name: 'Demo: Story Quest', exact: true }).waitFor();
+    await page.getByRole('heading', { name: chosenGame.title, exact: true }).waitFor();
     const tokenA = await page.evaluate(() => localStorage.getItem('gamematch_token'));
     const memberA = await call('GET', '/api/me', tokenA);
     assert.equal(memberA.role, 'member');
     await page.getByRole('button', { name: 'เพิ่มในเกมโปรด' }).click();
     await page.getByText('เพิ่มในเกมโปรดแล้ว', { exact: true }).waitFor();
     await page.getByRole('link', { name: 'เกมโปรด', exact: true }).click();
-    await page.getByRole('link', { name: 'Demo: Story Quest', exact: true }).waitFor();
+    await page.getByRole('link', { name: chosenGame.title, exact: true }).waitFor();
     await page.reload();
-    await page.getByRole('link', { name: 'Demo: Story Quest', exact: true }).waitFor();
+    await page.getByRole('link', { name: chosenGame.title, exact: true }).waitFor();
     await capture(page, 'desktop-favorite-persisted');
     pass(
       'Guest quiz -> detail -> register/login return -> favorite persists after reload through Go/Supabase',
@@ -257,6 +269,16 @@ async function run() {
     pass('preference survives reload from Supabase');
     sql("UPDATE gm_members SET role='admin' WHERE email='" + emails[0] + "';");
     await page.goto(origin + '/admin');
+    if (process.env.GM_QA_STEAM_SYNC === '1') {
+      await page.getByRole('button', { name: 'อัปเดตเกมออกใหม่ Steam' }).click();
+      await page
+        .getByRole('status')
+        .filter({ hasText: /อัปเดตจาก Steam \d+ เกมแล้ว/ })
+        .waitFor({ timeout: 35000 });
+      pass(
+        'Admin button fetches current Steam New Releases through real Go and persists the catalog',
+      );
+    }
     await page.getByLabel('ชื่อเกม').fill(title);
     await page.getByRole('button', { name: 'บันทึกเกม', exact: true }).click();
     const row = page.getByRole('row').filter({ hasText: title });

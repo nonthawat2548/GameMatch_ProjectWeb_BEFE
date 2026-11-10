@@ -27,6 +27,7 @@ type API struct {
 	Secret, RawgKey string
 	SyncMu          sync.Mutex
 	RawgClient      *http.Client
+	SteamClient     *http.Client
 }
 type user struct {
 	ID    int64  `json:"id"`
@@ -140,6 +141,7 @@ func (a *API) Routes() *http.ServeMux {
 	m.HandleFunc("PUT /api/admin/games/{id}", a.Guard(true, a.SaveGame))
 	m.HandleFunc("DELETE /api/admin/games/{id}", a.Guard(true, a.DeleteGame))
 	m.HandleFunc("POST /api/admin/sync", a.Guard(true, a.Sync))
+	m.HandleFunc("POST /api/admin/sync/steam", a.Guard(true, a.SyncSteam))
 	return m
 }
 func (a *API) Register(w http.ResponseWriter, r *http.Request) {

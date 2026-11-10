@@ -1,15 +1,15 @@
 > gamematch-fe@0.1.0 build
 > react-scripts build
 
-(node:23816) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(node:31392) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
 (Use `node --trace-deprecation ...` to show where the warning was created)
 Creating an optimized production build...
 Compiled successfully.
 
 File sizes after gzip:
 
-  74.23 kB (-3 B)  build\static\js\main.498e94d3.js
-  4 kB             build\static\css\main.dba2ddfa.css
+  75 kB (+765 B)   build\static\js\main.6f01f93c.js
+  4.02 kB (+19 B)  build\static\css\main.1cb161a6.css
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.

@@ -16,6 +16,8 @@ For the user's later redesign request, also inspected MovieHub `src/pages/Home.j
 
 ## RAWG attribution
 
+Latest user-requested alternative: Steam New Releases. Verified live public Store `api/featuredcategories/?cc=th&l=english`, `api/appdetails?appids=...`, and per-game HTML app_tag labels. These are publicly reachable Store endpoints and are not described as a guaranteed versioned Steamworks API. Reviewed https://store.steampowered.com/explore/new/ , https://partner.steamgames.com/doc/webapi_overview and https://steamcommunity.com/dev/apiterms . Store images/date/tags are retained with Steam links per card/detail and shared footer, no Valve affiliation claimed. The importer is manual and bounded, does not retrieve Steam user data or prices, and retains the old DB catalog on upstream/parse/SQL failure. No legal certification of third-party game artwork is claimed.
+
 Read the official API documentation/terms through web search after direct page requests timed out:
 
 - https://rawg.io/apidocs
