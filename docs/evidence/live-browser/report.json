@@ -1,0 +1,208 @@
+{
+  "scope": "Production React -> local Go net/http -> dedicated Supabase PostgreSQL, real HTTP and database, Demo fixtures. No live RAWG import or cloud hosting claim.",
+  "cases": [
+    {
+      "name": "Guest quiz -> detail -> register/login return -> favorite persists after reload through Go/Supabase",
+      "status": "passed"
+    },
+    {
+      "name": "real API 401/403 and ownership isolation for two members",
+      "status": "passed"
+    },
+    {
+      "name": "preference survives reload from Supabase",
+      "status": "passed"
+    },
+    {
+      "name": "Admin CRUD/publication through Go/Supabase; public hidden detail is 404",
+      "status": "passed"
+    },
+    {
+      "name": "Profile update -> password change -> old JWT rejected -> new-password login -> logout",
+      "status": "passed"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/games",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/recommendations",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/games/2",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/games/2",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/me/favorites/2",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/favorites",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/favorites",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/preferences",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/me/preferences",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/preferences",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/admin/games/6",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/games/6",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/sync",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/me/password",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "status": 200
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "file": "desktop-catalog-supabase.png",
+      "viewport": 1366,
+      "document": 1366
+    },
+    {
+      "file": "desktop-favorite-persisted.png",
+      "viewport": 1366,
+      "document": 1366
+    },
+    {
+      "file": "mobile-admin-real-api.png",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "file": "mobile-profile-real-api.png",
+      "viewport": 390,
+      "document": 390
+    }
+  ],
+  "browserVersion": "158.0.8127.18",
+  "status": "passed",
+  "cleanup": "Disposable QA members and game removed; original catalog preserved."
+}

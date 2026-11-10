@@ -1,0 +1,12 @@
+node_modules/
+build/
+.env
+.env.local
+*.exe
+backend/server
+.DS_Store
+.tools/
+.cache/
+.env.*
+!.env.example
+coverage/

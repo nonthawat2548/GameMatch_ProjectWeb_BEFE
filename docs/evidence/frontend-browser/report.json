@@ -1,0 +1,302 @@
+{
+  "clientDate": "2026-11-10 Asia/Bangkok",
+  "scope": "Production React build in isolated headless Chromium; HTTP API and image fixtures only. No real Go, DB, RAWG, deployment or user browser session.",
+  "tool": "Playwright 1.65.0, headless shell, temporary browser contexts",
+  "cases": [
+    {
+      "name": "desktop public routes, local filtering, quiz, detail, forms and overflow",
+      "status": "passed",
+      "viewport": {
+        "width": 1366,
+        "height": 900
+      }
+    },
+    {
+      "name": "mobile public routes, local filtering, quiz, detail, forms and overflow",
+      "status": "passed",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "narrow public routes, local filtering, quiz, detail, forms and overflow",
+      "status": "passed",
+      "viewport": {
+        "width": 320,
+        "height": 720
+      }
+    },
+    {
+      "name": "native login return, authenticated favorite save and reload (mock store)",
+      "status": "passed"
+    },
+    {
+      "name": "preference save and restoration after browser reload (mock store)",
+      "status": "passed"
+    },
+    {
+      "name": "profile refresh and password-change session cleanup (mock API)",
+      "status": "passed"
+    },
+    {
+      "name": "admin CRUD, publication and sync-error UI (mock API)",
+      "status": "passed"
+    },
+    {
+      "name": "member/admin layouts and a valid 100-byte display name",
+      "status": "passed"
+    },
+    {
+      "name": "real cross-tab storage logout in an isolated headless browser context",
+      "status": "passed"
+    },
+    {
+      "name": "loading, API error, retry and empty UI in native Chromium",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "desktop-home.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-catalog.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-quiz-results.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-detail.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-login.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-register.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-about.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-not-found.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-home.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-catalog.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-quiz-results.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-detail.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-login.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-register.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-about.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-not-found.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-home.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-catalog.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-quiz-results.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-detail.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-login.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-register.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-about.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-not-found.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-favorites.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-profile.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-admin.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-admin.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "desktop-profile.png",
+      "viewport": 1366,
+      "width": 1366,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-admin.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-profile.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "narrow-long-name.png",
+      "viewport": 320,
+      "width": 320,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-error.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    },
+    {
+      "file": "mobile-empty.png",
+      "viewport": 390,
+      "width": 390,
+      "overflow": [],
+      "font": "Prompt, Tahoma, system-ui, sans-serif"
+    }
+  ],
+  "pageErrors": [],
+  "browserVersion": "158.0.8127.18",
+  "status": "passed"
+}

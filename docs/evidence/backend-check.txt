@@ -1,0 +1,71 @@
+
+$ go mod tidy
+
+$ go fmt ./...
+
+$ go test -count=1 -v ./...
+?   	gamematch	[no test files]
+?   	gamematch/auth	[no test files]
+?   	gamematch/handler	[no test files]
+?   	gamematch/mw	[no test files]
+?   	gamematch/recommend	[no test files]
+?   	gamematch/store	[no test files]
+=== RUN   TestTokenRoundTrip
+--- PASS: TestTokenRoundTrip (0.00s)
+=== RUN   TestWrongKeyAndExpired
+--- PASS: TestWrongKeyAndExpired (0.00s)
+=== RUN   TestRejectUnexpectedSigningMethod
+--- PASS: TestRejectUnexpectedSigningMethod (0.00s)
+=== RUN   TestUnauthenticatedCannotReachAdmin
+--- PASS: TestUnauthenticatedCannotReachAdmin (0.00s)
+=== RUN   TestOriginAllowlist
+--- PASS: TestOriginAllowlist (0.00s)
+=== RUN   TestDatabaseMemberOwnershipAndSessionLifecycle
+--- PASS: TestDatabaseMemberOwnershipAndSessionLifecycle (6.98s)
+=== RUN   TestDatabaseAdminVisibilityAndConstraints
+--- PASS: TestDatabaseAdminVisibilityAndConstraints (6.18s)
+=== RUN   TestDatabaseRawgSyncPreservesEditsAndRollsBack
+2026/11/10 14:23:04 database operation failed: *pgconn.PgError
+--- PASS: TestDatabaseRawgSyncPreservesEditsAndRollsBack (3.01s)
+=== RUN   TestRegisterRejectsRoleAndMalformedInputBeforeDatabase
+--- PASS: TestRegisterRejectsRoleAndMalformedInputBeforeDatabase (0.00s)
+=== RUN   TestLoginRejectsOversizedPasswordBeforeDatabase
+--- PASS: TestLoginRejectsOversizedPasswordBeforeDatabase (0.00s)
+=== RUN   TestRateLimitWindowAndSeparatePeers
+--- PASS: TestRateLimitWindowAndSeparatePeers (0.00s)
+=== RUN   TestRateLimitConcurrentRequests
+--- PASS: TestRateLimitConcurrentRequests (0.00s)
+=== RUN   TestRateLimitIgnoresSpoofedForwardedHeadersAndPorts
+--- PASS: TestRateLimitIgnoresSpoofedForwardedHeadersAndPorts (0.00s)
+=== RUN   TestLoginAndRegisterShareRouteLimit
+--- PASS: TestLoginAndRegisterShareRouteLimit (0.00s)
+=== RUN   TestRateLimitBoundsNewPeersAndReclaimsExpiredEntries
+--- PASS: TestRateLimitBoundsNewPeersAndReclaimsExpiredEntries (0.00s)
+=== RUN   TestMatchAndExcludeUnpublished
+--- PASS: TestMatchAndExcludeUnpublished (0.00s)
+=== RUN   TestMultiplayerIsNotCoop
+--- PASS: TestMultiplayerIsNotCoop (0.00s)
+=== RUN   TestEmptyAndStableTie
+--- PASS: TestEmptyAndStableTie (0.00s)
+=== RUN   TestSyncMissingKeyAndConcurrentImport
+--- PASS: TestSyncMissingKeyAndConcurrentImport (0.00s)
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/upstream_quota
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/missing_results
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/null_results
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/trailing_JSON
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/oversized_body
+=== RUN   TestSyncRejectsBadUpstreamBeforeDatabase/more_than_first_page
+--- PASS: TestSyncRejectsBadUpstreamBeforeDatabase (0.01s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/upstream_quota (0.00s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/missing_results (0.00s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/null_results (0.00s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/trailing_JSON (0.00s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/oversized_body (0.01s)
+    --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/more_than_first_page (0.00s)
+PASS
+ok  	gamematch/tests	17.368s
+
+$ go vet ./...
+
+$ go build -o server.exe .
