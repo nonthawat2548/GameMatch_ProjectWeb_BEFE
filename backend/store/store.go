@@ -7,25 +7,28 @@ import (
 )
 
 type Game struct {
-	ID          int64      `json:"id"`
-	RawgID      *int64     `json:"rawgId,omitempty"`
-	SteamID     *int64     `json:"steamId,omitempty"`
-	ReleaseDate string     `json:"releaseDate,omitempty"`
-	SyncedAt    *time.Time `json:"syncedAt,omitempty"`
-	Title       string     `json:"title"`
-	Description string     `json:"description"`
-	ImageURL    string     `json:"imageUrl"`
-	Genres      []string   `json:"genres"`
-	Tags        []string   `json:"tags"`
-	Platforms   []string   `json:"platforms"`
-	Published   bool       `json:"isPublished"`
-	Score       int        `json:"matchScore"`
-	Reasons     []string   `json:"reasons,omitempty"`
+	ID                  int64      `json:"id"`
+	RawgID              *int64     `json:"rawgId,omitempty"`
+	SteamID             *int64     `json:"steamId,omitempty"`
+	ReleaseDate         string     `json:"releaseDate,omitempty"`
+	SyncedAt            *time.Time `json:"syncedAt,omitempty"`
+	PopularityOrder     *int       `json:"popularityOrder,omitempty"`
+	PopularitySource    string     `json:"popularitySource,omitempty"`
+	PopularityUpdatedAt *time.Time `json:"popularityUpdatedAt,omitempty"`
+	Title               string     `json:"title"`
+	Description         string     `json:"description"`
+	ImageURL            string     `json:"imageUrl"`
+	Genres              []string   `json:"genres"`
+	Tags                []string   `json:"tags"`
+	Platforms           []string   `json:"platforms"`
+	Published           bool       `json:"isPublished"`
+	Score               int        `json:"matchScore"`
+	Reasons             []string   `json:"reasons,omitempty"`
 }
 type Store struct{ DB *pgxpool.Pool }
 
 func (s *Store) Games(ctx context.Context, admin bool) ([]Game, error) {
-	rows, e := s.DB.Query(ctx, `SELECT id,rawg_id,title,description,image_url,genres,tags,platforms,is_published,steam_id,COALESCE(release_date::text,''),synced_at FROM gm_games WHERE ($1 OR is_published) ORDER BY release_date DESC NULLS LAST,id DESC`, admin)
+	rows, e := s.DB.Query(ctx, `SELECT id,rawg_id,title,description,image_url,genres,tags,platforms,is_published,steam_id,COALESCE(release_date::text,''),synced_at,popularity_order,COALESCE(popularity_source,''),popularity_updated_at FROM gm_games WHERE ($1 OR is_published) ORDER BY popularity_order ASC NULLS LAST,release_date DESC NULLS LAST,id DESC`, admin)
 	if e != nil {
 		return nil, e
 	}
@@ -33,7 +36,7 @@ func (s *Store) Games(ctx context.Context, admin bool) ([]Game, error) {
 	out := []Game{}
 	for rows.Next() {
 		var g Game
-		if e = rows.Scan(&g.ID, &g.RawgID, &g.Title, &g.Description, &g.ImageURL, &g.Genres, &g.Tags, &g.Platforms, &g.Published, &g.SteamID, &g.ReleaseDate, &g.SyncedAt); e != nil {
+		if e = rows.Scan(&g.ID, &g.RawgID, &g.Title, &g.Description, &g.ImageURL, &g.Genres, &g.Tags, &g.Platforms, &g.Published, &g.SteamID, &g.ReleaseDate, &g.SyncedAt, &g.PopularityOrder, &g.PopularitySource, &g.PopularityUpdatedAt); e != nil {
 			return nil, e
 		}
 		out = append(out, g)

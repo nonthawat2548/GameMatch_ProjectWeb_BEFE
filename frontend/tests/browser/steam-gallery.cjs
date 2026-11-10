@@ -17,12 +17,17 @@ const report = { frontend: origin, backend: api, viewports: [], pageErrors: [] }
     assert.equal(response.status, 200);
     const games = await response.json();
     assert(
-      games.length >= 4 && games.every((game) => game.steamId && game.imageUrl && game.releaseDate),
+      games.length >= 100 &&
+        games.every((game) => game.steamId && game.imageUrl && game.releaseDate),
     );
+    assert.equal(games.filter((game) => game.popularityOrder).length, 100);
+    assert.equal(games[0].title, 'Counter-Strike 2');
     report.games = games.map((game) => ({
       title: game.title,
       steamId: game.steamId,
       releaseDate: game.releaseDate,
+      popularityOrder: game.popularityOrder,
+      popularitySource: game.popularitySource,
     }));
     for (const [name, viewport] of [
       ['desktop', { width: 1366, height: 900 }],
@@ -34,29 +39,48 @@ const report = { frontend: origin, backend: api, viewports: [], pageErrors: [] }
       page.on('pageerror', (error) => report.pageErrors.push(error.message));
       await page.goto(origin + '/discover');
       await page.getByRole('link', { name: games[0].title, exact: true }).waitFor();
-      const images = page.locator('.game-card img');
-      assert.equal(await images.count(), games.length);
-      for (let i = 0; i < games.length; i++) {
-        await images.nth(i).scrollIntoViewIfNeeded();
-        await images.nth(i).evaluate(
-          (img) =>
-            new Promise((resolve, reject) => {
-              if (img.complete)
-                return img.naturalWidth > 0 ? resolve() : reject(new Error('broken cover'));
-              img.addEventListener('load', resolve, { once: true });
-              img.addEventListener('error', () => reject(new Error('cover download failed')), {
-                once: true,
-              });
-            }),
-        );
+      let loaded = 0;
+      for (let offset = 0; offset < games.length; offset += 24) {
+        await page.getByRole('link', { name: games[offset].title, exact: true }).waitFor();
+        const images = page.locator('.game-card img');
+        const count = Math.min(24, games.length - offset);
+        assert.equal(await images.count(), count);
+        for (let i = 0; i < count; i++) {
+          await images.nth(i).scrollIntoViewIfNeeded();
+          await images.nth(i).evaluate(
+            (img) =>
+              new Promise((resolve, reject) => {
+                if (img.complete)
+                  return img.naturalWidth > 0 ? resolve() : reject(new Error('broken cover'));
+                img.addEventListener('load', resolve, { once: true });
+                img.addEventListener('error', () => reject(new Error('cover download failed')), {
+                  once: true,
+                });
+              }),
+          );
+        }
+        loaded += count;
+        assert.equal(await page.locator('.game-card .placeholder').count(), 0);
+        if (offset + count < games.length)
+          await page.getByRole('button', { name: 'ถัดไป', exact: true }).click();
       }
-      assert.equal(await page.locator('.game-card .placeholder').count(), 0);
+      assert.equal(loaded, games.length);
+      assert(await page.getByRole('button', { name: 'ถัดไป', exact: true }).isDisabled());
+      await page.getByRole('searchbox').fill('Counter-Strike');
+      assert.equal(await page.locator('.game-card').count(), 1);
+      assert.equal(await page.locator('.pagination').count(), 0);
+      await page.getByRole('searchbox').fill('');
+      await page.getByRole('link', { name: games[0].title, exact: true }).waitFor();
+      await page.getByRole('combobox').selectOption('name');
+      const alphabetic = [...games].sort((a, b) => a.title.localeCompare(b.title));
+      await page.getByRole('link', { name: alphabetic[0].title, exact: true }).waitFor();
+      await page.getByRole('combobox').selectOption('popular');
       const width = await page.evaluate(() => document.documentElement.scrollWidth);
       assert(width <= viewport.width + 2);
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.screenshot({ path: path.join(output, name + '-catalog.png'), fullPage: true });
       await page.goto(origin);
-      await page.getByRole('heading', { name: 'เกมออกใหม่จาก Steam' }).waitFor();
+      await page.getByRole('heading', { name: 'เกมยอดนิยมบน Steam' }).waitFor();
       await page.locator('.game-card img').first().waitFor();
       await page.screenshot({ path: path.join(output, name + '-home.png'), fullPage: true });
       await page.goto(origin + '/games/' + games[0].id);

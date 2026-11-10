@@ -1,0 +1,101 @@
+2026/11/10 15:31:03 Verified 1/100 games (1 candidates checked): Counter-Strike 2
+2026/11/10 15:31:04 Verified 2/100 games (2 candidates checked): Dota 2
+2026/11/10 15:31:05 Verified 3/100 games (3 candidates checked): PUBG: BATTLEGROUNDS
+2026/11/10 15:31:06 Verified 4/100 games (5 candidates checked): Phantom Blade Zero
+2026/11/10 15:31:07 Verified 5/100 games (7 candidates checked): Call of Duty®
+2026/11/10 15:31:08 Verified 6/100 games (8 candidates checked): Apex Legends™
+2026/11/10 15:31:09 Verified 7/100 games (10 candidates checked): ROB RUN
+2026/11/10 15:31:10 Verified 8/100 games (11 candidates checked): Slay the Spire 2
+2026/11/10 15:31:11 Verified 9/100 games (12 candidates checked): Probably Stolen - Cyberpunk Shopkeeper Sim
+2026/11/10 15:31:12 Verified 10/100 games (13 candidates checked): War Thunder
+2026/11/10 15:31:13 Verified 11/100 games (15 candidates checked): Geometry Dash
+2026/11/10 15:31:14 Verified 12/100 games (16 candidates checked): Tom Clancy's Rainbow Six Siege
+2026/11/10 15:31:15 Verified 13/100 games (17 candidates checked): Warframe
+2026/11/10 15:31:16 Verified 14/100 games (19 candidates checked): Overwatch®
+2026/11/10 15:31:18 Verified 15/100 games (21 candidates checked): The Binding of Isaac: Rebirth
+2026/11/10 15:31:18 Verified 16/100 games (22 candidates checked): Limbus Company
+2026/11/10 15:31:19 Verified 17/100 games (23 candidates checked): R.E.P.O.
+2026/11/10 15:31:19 Verified 18/100 games (24 candidates checked): Stardew Valley
+2026/11/10 15:31:20 Verified 19/100 games (25 candidates checked): WARDOGS
+2026/11/10 15:31:21 Verified 20/100 games (26 candidates checked): HELLDIVERS™ 2
+2026/11/10 15:31:23 Verified 21/100 games (28 candidates checked): Team Fortress 2
+2026/11/10 15:31:24 Verified 22/100 games (29 candidates checked): Delta Force
+2026/11/10 15:31:26 Verified 23/100 games (31 candidates checked): Battlefield™ 6
+2026/11/10 15:31:27 Verified 24/100 games (32 candidates checked): ARC Raiders
+2026/11/10 15:31:28 Verified 25/100 games (33 candidates checked): Terraria
+2026/11/10 15:31:28 Verified 26/100 games (34 candidates checked): Left 4 Dead 2
+2026/11/10 15:31:29 Verified 27/100 games (35 candidates checked): Euro Truck Simulator 2
+2026/11/10 15:31:30 Verified 28/100 games (36 candidates checked): VRChat
+2026/11/10 15:31:30 Verified 29/100 games (37 candidates checked): Grand Theft Auto V Legacy
+2026/11/10 15:31:31 Verified 30/100 games (38 candidates checked): Project Zomboid
+2026/11/10 15:31:32 Verified 31/100 games (39 candidates checked): Valheim
+2026/11/10 15:31:33 Verified 32/100 games (40 candidates checked): BeamNG.drive
+2026/11/10 15:31:34 Verified 33/100 games (41 candidates checked): NARAKA: BLADEPOINT
+2026/11/10 15:31:34 Verified 34/100 games (42 candidates checked): Don't Starve Together
+2026/11/10 15:31:35 Verified 35/100 games (43 candidates checked): Aniimo
+2026/11/10 15:31:36 Verified 36/100 games (44 candidates checked): EA SPORTS FC™ 27
+2026/11/10 15:31:36 Verified 37/100 games (45 candidates checked): Rocket League®
+2026/11/10 15:31:38 Verified 38/100 games (47 candidates checked): Enshrouded
+2026/11/10 15:31:40 Verified 39/100 games (49 candidates checked): Hearts of Iron IV
+2026/11/10 15:31:41 Verified 40/100 games (51 candidates checked): The Elder Scrolls V: Skyrim Special Edition
+2026/11/10 15:31:42 Verified 41/100 games (52 candidates checked): EA SPORTS FC™ 26
+2026/11/10 15:31:43 Verified 42/100 games (54 candidates checked): Garry's Mod
+2026/11/10 15:31:43 Verified 43/100 games (55 candidates checked): eFootball™
+2026/11/10 15:31:44 Verified 44/100 games (56 candidates checked): Moon Sweepers
+2026/11/10 15:31:45 Verified 45/100 games (57 candidates checked): PEAK
+2026/11/10 15:31:45 Verified 46/100 games (58 candidates checked): Bongo Cat
+2026/11/10 15:31:46 Verified 47/100 games (59 candidates checked): Brotato
+2026/11/10 15:31:47 Verified 48/100 games (61 candidates checked): Farming Simulator 25
+2026/11/10 15:31:50 Verified 49/100 games (64 candidates checked): TBH: Task Bar Hero
+2026/11/10 15:31:50 Verified 50/100 games (65 candidates checked): Total War: WARHAMMER III
+2026/11/10 15:31:51 Verified 51/100 games (66 candidates checked): ELDEN RING
+2026/11/10 15:31:52 Verified 52/100 games (67 candidates checked): Street Fighter™ 6
+2026/11/10 15:31:52 Verified 53/100 games (68 candidates checked): DayZ
+2026/11/10 15:31:53 Verified 54/100 games (69 candidates checked): Forza Horizon 6
+2026/11/10 15:31:54 Verified 55/100 games (70 candidates checked): Palworld
+2026/11/10 15:31:54 Verified 56/100 games (71 candidates checked): Sid Meier’s Civilization® VI
+2026/11/10 15:31:56 Verified 57/100 games (73 candidates checked): RimWorld
+2026/11/10 15:31:57 Verified 58/100 games (75 candidates checked): Crimson Desert Enhanced
+2026/11/10 15:31:57 Verified 59/100 games (76 candidates checked): THE FINALS
+2026/11/10 15:31:58 Verified 60/100 games (77 candidates checked): Age of Empires II: Definitive Edition
+2026/11/10 15:31:59 Verified 61/100 games (78 candidates checked): Brawlhalla
+2026/11/10 15:32:00 Verified 62/100 games (79 candidates checked): Arena Breakout: Infinite
+2026/11/10 15:32:01 Verified 63/100 games (80 candidates checked): Destiny 2
+2026/11/10 15:32:01 Verified 64/100 games (81 candidates checked): Assetto Corsa
+2026/11/10 15:32:02 Verified 65/100 games (82 candidates checked): 7 Days to Die
+2026/11/10 15:32:03 Verified 66/100 games (83 candidates checked): Mount & Blade II: Bannerlord
+2026/11/10 15:32:03 Verified 67/100 games (84 candidates checked): Monster Hunter Wilds
+2026/11/10 15:32:04 Verified 68/100 games (85 candidates checked): Hunt: Showdown 1896
+2026/11/10 15:32:05 Verified 69/100 games (86 candidates checked): Zenless Zone Zero
+2026/11/10 15:32:05 Verified 70/100 games (87 candidates checked): Phasmophobia
+2026/11/10 15:32:06 Verified 71/100 games (88 candidates checked): Aimlabs
+2026/11/10 15:32:07 Verified 72/100 games (89 candidates checked): Dressmaker
+2026/11/10 15:32:08 Verified 73/100 games (90 candidates checked): ARK: Survival Ascended
+2026/11/10 15:32:08 Verified 74/100 games (91 candidates checked): The Outlast Trials
+2026/11/10 15:32:09 Verified 75/100 games (92 candidates checked): Once Human
+2026/11/10 15:32:10 Verified 76/100 games (93 candidates checked): Escape from Tarkov
+2026/11/10 15:32:11 Verified 77/100 games (94 candidates checked): Balatro
+2026/11/10 15:32:12 Verified 78/100 games (95 candidates checked): Bloons TD 6
+2026/11/10 15:32:12 Verified 79/100 games (96 candidates checked): NBA 2K27
+2026/11/10 15:32:13 Verified 80/100 games (97 candidates checked): Path of Exile 2
+2026/11/10 15:32:16 Verified 81/100 games (100 candidates checked): Warhammer 40,000: Space Marine 2
+2026/11/10 15:32:17 Verified 82/100 games (102 candidates checked): Call of Duty®: Modern Warfare® 4
+2026/11/10 15:32:18 Verified 83/100 games (103 candidates checked): Casualties: Unknown
+2026/11/10 15:32:18 Verified 84/100 games (104 candidates checked): DREADMOOR
+2026/11/10 15:32:19 Verified 85/100 games (105 candidates checked): PAYDAY 3
+2026/11/10 15:32:20 Verified 86/100 games (106 candidates checked): Walk of Life
+2026/11/10 15:32:21 Verified 87/100 games (107 candidates checked): Assassin's Creed Black Flag Resynced
+2026/11/10 15:32:22 Verified 88/100 games (108 candidates checked): The Isle
+2026/11/10 15:32:22 Verified 89/100 games (109 candidates checked): Scam With Your Friends
+2026/11/10 15:32:23 Verified 90/100 games (110 candidates checked): 007 First Light
+2026/11/10 15:32:24 Verified 91/100 games (111 candidates checked): ZED ZONE
+2026/11/10 15:32:25 Verified 92/100 games (112 candidates checked): Planet Zoo 2
+2026/11/10 15:32:25 Verified 93/100 games (113 candidates checked): Slap 'em UP!
+2026/11/10 15:32:26 Verified 94/100 games (114 candidates checked): Call of Duty®: Warzone™
+2026/11/10 15:32:28 Verified 95/100 games (117 candidates checked): Loftia
+2026/11/10 15:32:29 Verified 96/100 games (118 candidates checked): Assassin’s Creed Shadows
+2026/11/10 15:32:30 Verified 97/100 games (119 candidates checked): Mortal Shell II
+2026/11/10 15:32:30 Verified 98/100 games (120 candidates checked): ArcheAge Chronicles
+2026/11/10 15:32:31 Verified 99/100 games (121 candidates checked): Company of Heroes 3
+2026/11/10 15:32:34 Verified 100/100 games (125 candidates checked): Microsoft Flight Simulator 2024
+2026/11/10 15:32:42 Committed 100 popular Steam games; existing descriptions and publication preserved

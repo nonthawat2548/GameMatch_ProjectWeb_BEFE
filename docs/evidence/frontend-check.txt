@@ -12,73 +12,6 @@ All matched files use Prettier code style!
 > gamematch-fe@0.1.0 test
 > react-scripts test --watchAll=false --runInBand
 
-PASS src/tests/pages/Detail.test.jsx
-  ● Console
-
-    console.warn
-      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
-
-      23 | });
-      24 | function page() {
-    > 25 |   render(
-         |         ^
-      26 |     <MemoryRouter initialEntries={['/games/1']}>
-      27 |       <Link to="/games/2">Second game</Link>
-      28 |       <Routes>
-
-      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
-      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
-      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:26:5)
-      at node_modules/react-router/lib/components.tsx:257:25
-      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
-      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
-      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
-      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
-      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
-      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
-      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
-      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
-      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
-      at node_modules/@testing-library/react/dist/act-compat.js:47:25
-      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
-      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
-      at page (src/tests/pages/Detail.test.jsx:25:9)
-      at Object.<anonymous> (src/tests/pages/Detail.test.jsx:37:3)
-
-    console.warn
-      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
-
-      23 | });
-      24 | function page() {
-    > 25 |   render(
-         |         ^
-      26 |     <MemoryRouter initialEntries={['/games/1']}>
-      27 |       <Link to="/games/2">Second game</Link>
-      28 |       <Routes>
-
-      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
-      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
-      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:37:5)
-      at node_modules/react-router/lib/components.tsx:257:25
-      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
-      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
-      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
-      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
-      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
-      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
-      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
-      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
-      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
-      at node_modules/@testing-library/react/dist/act-compat.js:47:25
-      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
-      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
-      at page (src/tests/pages/Detail.test.jsx:25:9)
-      at Object.<anonymous> (src/tests/pages/Detail.test.jsx:37:3)
-
 PASS src/tests/App.test.jsx
   ● Console
 
@@ -148,7 +81,75 @@ PASS src/tests/App.test.jsx
       at render (node_modules/@testing-library/react/dist/pure.js:271:10)
       at Object.<anonymous> (src/tests/App.test.jsx:58:9)
 
+PASS src/tests/pages/Detail.test.jsx
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      23 | });
+      24 | function page() {
+    > 25 |   render(
+         |         ^
+      26 |     <MemoryRouter initialEntries={['/games/1']}>
+      27 |       <Link to="/games/2">Second game</Link>
+      28 |       <Routes>
+
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:26:5)
+      at node_modules/react-router/lib/components.tsx:257:25
+      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
+      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
+      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at page (src/tests/pages/Detail.test.jsx:25:9)
+      at Object.<anonymous> (src/tests/pages/Detail.test.jsx:37:3)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      23 | });
+      24 | function page() {
+    > 25 |   render(
+         |         ^
+      26 |     <MemoryRouter initialEntries={['/games/1']}>
+      27 |       <Link to="/games/2">Second game</Link>
+      28 |       <Routes>
+
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:37:5)
+      at node_modules/react-router/lib/components.tsx:257:25
+      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
+      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
+      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at page (src/tests/pages/Detail.test.jsx:25:9)
+      at Object.<anonymous> (src/tests/pages/Detail.test.jsx:37:3)
+
 PASS src/tests/pages/Admin.test.jsx
+PASS src/tests/auth/AuthContext.test.jsx
 PASS src/tests/pages/Login.test.jsx
   ● Console
 
@@ -216,7 +217,6 @@ PASS src/tests/pages/Login.test.jsx
       at page (src/tests/pages/Login.test.jsx:16:9)
       at Object.<anonymous> (src/tests/pages/Login.test.jsx:36:3)
 
-PASS src/tests/auth/AuthContext.test.jsx
 PASS src/tests/pages/MatchQuiz.test.jsx
   ● Console
 
@@ -281,6 +281,73 @@ PASS src/tests/pages/MatchQuiz.test.jsx
       at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
       at render (node_modules/@testing-library/react/dist/pure.js:271:10)
       at Object.<anonymous> (src/tests/pages/MatchQuiz.test.jsx:23:9)
+
+PASS src/tests/pages/Profile.test.jsx
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      10 | const logout = jest.fn();
+      11 | function page() {
+    > 12 |   render(
+         |         ^
+      13 |     <MemoryRouter initialEntries={['/me/profile']}>
+      14 |       <Routes>
+      15 |         <Route path="/me/profile" element={<Profile />} />
+
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:26:5)
+      at node_modules/react-router/lib/components.tsx:257:25
+      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
+      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
+      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at page (src/tests/pages/Profile.test.jsx:12:9)
+      at Object.<anonymous> (src/tests/pages/Profile.test.jsx:35:3)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      10 | const logout = jest.fn();
+      11 | function page() {
+    > 12 |   render(
+         |         ^
+      13 |     <MemoryRouter initialEntries={['/me/profile']}>
+      14 |       <Routes>
+      15 |         <Route path="/me/profile" element={<Profile />} />
+
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:37:5)
+      at node_modules/react-router/lib/components.tsx:257:25
+      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
+      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
+      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at page (src/tests/pages/Profile.test.jsx:12:9)
+      at Object.<anonymous> (src/tests/pages/Profile.test.jsx:35:3)
 
 PASS src/tests/pages/Discover.test.jsx
   ● Console
@@ -415,73 +482,6 @@ PASS src/tests/pages/Home.test.jsx
       at render (node_modules/@testing-library/react/dist/pure.js:271:10)
       at page (src/tests/pages/Home.test.jsx:15:9)
       at Object.<anonymous> (src/tests/pages/Home.test.jsx:24:3)
-
-PASS src/tests/pages/Profile.test.jsx
-  ● Console
-
-    console.warn
-      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
-
-      10 | const logout = jest.fn();
-      11 | function page() {
-    > 12 |   render(
-         |         ^
-      13 |     <MemoryRouter initialEntries={['/me/profile']}>
-      14 |       <Routes>
-      15 |         <Route path="/me/profile" element={<Profile />} />
-
-      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
-      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
-      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:26:5)
-      at node_modules/react-router/lib/components.tsx:257:25
-      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
-      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
-      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
-      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
-      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
-      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
-      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
-      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
-      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
-      at node_modules/@testing-library/react/dist/act-compat.js:47:25
-      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
-      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
-      at page (src/tests/pages/Profile.test.jsx:12:9)
-      at Object.<anonymous> (src/tests/pages/Profile.test.jsx:35:3)
-
-    console.warn
-      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
-
-      10 | const logout = jest.fn();
-      11 | function page() {
-    > 12 |   render(
-         |         ^
-      13 |     <MemoryRouter initialEntries={['/me/profile']}>
-      14 |       <Routes>
-      15 |         <Route path="/me/profile" element={<Profile />} />
-
-      at warnOnce (node_modules/react-router/lib/deprecations.ts:9:13)
-      at logDeprecation (node_modules/react-router/lib/deprecations.ts:14:3)
-      at logV6DeprecationWarnings (node_modules/react-router/lib/deprecations.ts:37:5)
-      at node_modules/react-router/lib/components.tsx:257:25
-      at Object.react-stack-bottom-frame (node_modules/react-dom/cjs/react-dom-client.development.js:22509:20)
-      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
-      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:10758:29)
-      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:10880:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12653:13)
-      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:12627:11)
-      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:12657:11)
-      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15460:13)
-      at node_modules/react-dom/cjs/react-dom-client.development.js:15324:11
-      at flushActQueue (node_modules/react/cjs/react.development.js:862:34)
-      at Object.<anonymous>.process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:1151:10)
-      at node_modules/@testing-library/react/dist/act-compat.js:47:25
-      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
-      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
-      at page (src/tests/pages/Profile.test.jsx:12:9)
-      at Object.<anonymous> (src/tests/pages/Profile.test.jsx:35:3)
 
 PASS src/tests/pages/Favorites.test.jsx
   ● Console
@@ -685,23 +685,23 @@ PASS src/tests/components/ProtectedRoute.test.jsx
 PASS src/tests/api/backend.test.js
 
 Test Suites: 13 passed, 13 total
-Tests:       84 passed, 84 total
+Tests:       86 passed, 86 total
 Snapshots:   0 total
-Time:        13.149 s, estimated 14 s
+Time:        10.658 s, estimated 13 s
 Ran all test suites.
 
 > gamematch-fe@0.1.0 build
 > react-scripts build
 
-(node:31392) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(node:30688) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
 (Use `node --trace-deprecation ...` to show where the warning was created)
 Creating an optimized production build...
 Compiled successfully.
 
 File sizes after gzip:
 
-  75 kB (+765 B)   build\static\js\main.6f01f93c.js
-  4.02 kB (+19 B)  build\static\css\main.1cb161a6.css
+  75.56 kB (+565 B)  build\static\js\main.e622c7d2.js
+  4.06 kB (+42 B)    build\static\css\main.2d9de03e.css
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.

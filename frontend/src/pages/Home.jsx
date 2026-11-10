@@ -50,9 +50,16 @@ export default function Home() {
         <div className="section-head">
           <div>
             <h2 id="home-games-heading">
-              {games.some((game) => game.steamId) ? 'เกมออกใหม่จาก Steam' : 'เลือกดูจากคลังเกม'}
+              {games.some((game) => game.popularityOrder)
+                ? 'เกมยอดนิยมบน Steam'
+                : games.some((game) => game.steamId)
+                  ? 'เกมออกใหม่จาก Steam'
+                  : 'เลือกดูจากคลังเกม'}
             </h2>
             <p className="muted">ดูรายละเอียดก่อนเก็บเกมที่สนใจไว้ในรายการเกมโปรด</p>
+            {games.some((game) => game.popularityOrder) && (
+              <p className="muted">คัดจาก Steam Most Played และ Top Sellers ตามรอบอัปเดต</p>
+            )}
           </div>
           <Link className="inline-link" to="/discover">
             ดูทั้งหมด

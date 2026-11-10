@@ -1,3 +1,9 @@
+## Popular catalog snapshot (10 November 2026)
+
+`GET /api/games` now defaults to `popularity_order ASC NULLS LAST`, then release date/id descending. Optional JSON fields: `popularityOrder` (selection position), `popularitySource` (Most Played or Top Sellers TH), `popularityUpdatedAt` (import time). These describe a manually refreshed subset, not live player counts or global ranks. The frontend fetches once and derives search/genre/sort plus 24-item pagination locally.
+
+The manual server-side maintenance command `go run ./cmd/import-popular` requires the dedicated GameMatch DATABASE_URL; it is not a public HTTP endpoint. It verifies 100 eligible entries before one DB transaction, rolls back the entire write on failure, and preserves descriptions/publication. Existing Admin Steam endpoint remains a separate 12-New-Releases action.
+
 # API Contract
 Base: REACT_APP_API_URL (เช่น http://localhost:8080). JSON body/response. Auth: `Authorization: Bearer TOKEN`.
 Error ทุก handler: `{ "error": "ข้อความ" }` ยกเว้น ServeMux default 404/405 และ CORS rejection อาจเป็น text; FE มี fallback JSON handling.

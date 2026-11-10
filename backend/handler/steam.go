@@ -108,6 +108,10 @@ func steamGame(detail steamDetail, page []byte) (store.Game, bool) {
 	}
 	genres, platforms := []string{}, []string{}
 	for _, g := range detail.Genres {
+		switch g.Description {
+		case "Utilities", "Animation & Modeling", "Audio Production", "Design & Illustration", "Photo Editing", "Software Training", "Video Production", "Web Publishing", "Game Development":
+			return store.Game{}, false
+		}
 		genres = append(genres, steamSlug(g.Description))
 	}
 	for _, category := range detail.Categories {

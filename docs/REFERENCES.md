@@ -1,3 +1,11 @@
+## Steam popularity sources ? checked 10 November 2026
+
+- https://store.steampowered.com/charts/mostplayed
+- https://api.steampowered.com/ISteamChartsService/GetMostPlayedGames/v1/
+- https://store.steampowered.com/search/?filter=topsellers&category1=998&cc=th
+
+The import reads the Most Played snapshot first and deduplicates/replaces ineligible entries using the Top Sellers TH Store list. It then verifies Store app details, images, release dates and tags per game. Only released games with usable metadata qualify; software/DLC/unavailable entries are excluded. Popularity order is this selected subset, not a claimed live global ranking. Store JSON/HTML shapes can change; a failed/incomplete batch retains the previous catalog. Existing page/game source credits link back to Steam. No prices or live player counts are inferred.
+
 # References inspected — 10 November 2026
 
 Latest resource check supersedes the earlier starter-only account note below: the user authorized a new `gamematch-db` in their selected organization at $0/month and supplied `nonthawat2548/GameMatch_ProjectWeb_BEFE`. Separate Render and Vercel GameMatch projects are now deployed and the hosted path passed real browser/HTTP/DB verification. See DEPLOYMENT/VALIDATION. MovieHub remained unchanged. Current Supabase changelog, connection/session-pooler docs and Render compute/env/deploy/health references were read. Go security advisories and govulncheck findings prompted dependency updates within the existing stack; before/after evidence is retained.

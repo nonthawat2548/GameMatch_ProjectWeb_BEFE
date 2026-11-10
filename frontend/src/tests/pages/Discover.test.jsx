@@ -60,3 +60,45 @@ test('combines the selected genre with a case-insensitive title search', async (
   expect(screen.getByText(/ยังไม่มีเกมที่ตรงเงื่อนไข/)).toBeInTheDocument();
   expect(api).toHaveBeenCalledTimes(1);
 });
+
+test('paginates 100 games and resets the page after search or genre selection without refetching', async () => {
+  api.mockResolvedValue(
+    Array.from({ length: 100 }, (_, i) => ({
+      ...game,
+      id: i + 1,
+      title: `Demo: Game ${String(i + 1).padStart(3, '0')}`,
+      genres: i % 2 ? ['action'] : ['rpg'],
+    })),
+  );
+  page();
+  await screen.findByText('Demo: Game 001');
+  expect(document.querySelectorAll('.game-card')).toHaveLength(24);
+  expect(screen.getByText('หน้า 1 / 5 · ครั้งละ 24 เกม')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'ถัดไป' }));
+  expect(screen.getByText('Demo: Game 025')).toBeInTheDocument();
+  expect(screen.queryByText('Demo: Game 001')).not.toBeInTheDocument();
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '100' } });
+  expect(screen.getByText('Demo: Game 100')).toBeInTheDocument();
+  expect(screen.queryByRole('navigation', { name: 'หน้ารายการเกม' })).not.toBeInTheDocument();
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '' } });
+  fireEvent.click(screen.getByRole('button', { name: 'ถัดไป' }));
+  fireEvent.click(screen.getByRole('button', { name: 'RPG' }));
+  expect(screen.getByText('Demo: Game 001')).toBeInTheDocument();
+  expect(screen.getByText('หน้า 1 / 3 · ครั้งละ 24 เกม')).toBeInTheDocument();
+  expect(api).toHaveBeenCalledTimes(1);
+});
+
+test('switches between source popularity order, release dates and names locally', async () => {
+  api.mockResolvedValue([
+    { ...game, title: 'Demo: Z Popular', releaseDate: '2020-01-01' },
+    { ...game, id: 2, title: 'Demo: A Recent', releaseDate: '2026-11-09' },
+  ]);
+  page();
+  await screen.findByText('Demo: Z Popular');
+  expect(document.querySelector('.game-card h2')).toHaveTextContent('Demo: Z Popular');
+  fireEvent.change(screen.getByLabelText('เรียงตาม'), { target: { value: 'newest' } });
+  expect(document.querySelector('.game-card h2')).toHaveTextContent('Demo: A Recent');
+  fireEvent.change(screen.getByLabelText('เรียงตาม'), { target: { value: 'popular' } });
+  expect(document.querySelector('.game-card h2')).toHaveTextContent('Demo: Z Popular');
+  expect(api).toHaveBeenCalledTimes(1);
+});

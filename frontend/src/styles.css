@@ -190,6 +190,20 @@ p {
   margin: 0;
   font-size: 13px;
 }
+.sort-label {
+  width: 180px;
+  margin: 0 0 0 auto;
+  font-size: 13px;
+}
+.pagination {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.pagination button {
+  margin: 0;
+}
 .search-label input {
   margin-top: 5px;
 }
@@ -767,6 +781,10 @@ footer a {
   }
   .search-label {
     width: 100%;
+  }
+  .sort-label {
+    width: 100%;
+    margin: 0;
   }
   .panel {
     padding: 18px;

@@ -4,7 +4,7 @@
 
 **สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย นำเข้าเกมจริงพร้อมภาพ/วันที่จาก Steam New Releases แล้ว 12 เกม และซ่อน Demo เดิมโดยไม่ลบข้อมูล RAWG ยังเป็นแหล่งเสริมที่ต้องตั้ง key ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
 
-อัปเดต 10 พ.ย. 2569: frontend ผ่าน format, 13 suites / 84 tests และ production build; headless QA ผ่านทั้ง API จำลองและเส้นทาง React → Go → Supabase จริง รวมสมัครสมาชิก รายการโปรดสองบัญชี Preferences, Profile/Password และ Admin ไม่มีการเปิดหน้าต่างหรือควบคุมจอผู้ใช้ สร้าง `gamematch-db` ใหม่ตามที่ผู้ใช้ยืนยัน โดยไม่แตะ MovieHub และใช้ repo `nonthawat2548/GameMatch_ProjectWeb_BEFE` ผล Go/DB และข้อจำกัดอยู่ใน `docs/evidence/`
+อัปเดต 10 พ.ย. 2569: frontend ผ่าน format, 13 suites / 86 tests และ production build; headless QA ผ่านทั้ง API จำลองและเส้นทาง React → Go → Supabase จริง รวมสมัครสมาชิก รายการโปรดสองบัญชี Preferences, Profile/Password และ Admin ไม่มีการเปิดหน้าต่างหรือควบคุมจอผู้ใช้ สร้าง `gamematch-db` ใหม่ตามที่ผู้ใช้ยืนยัน โดยไม่แตะ MovieHub และใช้ repo `nonthawat2548/GameMatch_ProjectWeb_BEFE` ผล Go/DB และข้อจำกัดอยู่ใน `docs/evidence/`
 
 ## เปิดให้ Codex ทำต่อ
 1. แตก ZIP แล้วเปิดโฟลเดอร์ gamematch-basic ใน VS Code / Codex

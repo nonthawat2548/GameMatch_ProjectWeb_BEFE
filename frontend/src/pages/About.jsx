@@ -30,6 +30,27 @@ export default function About() {
       <section className="about-section">
         <h2>แหล่งข้อมูล</h2>
         <p>
+          คลังยอดนิยมคัดจาก{' '}
+          <a
+            className="inline-link"
+            href="https://store.steampowered.com/charts/mostplayed"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Steam Most Played
+          </a>{' '}
+          และ{' '}
+          <a
+            className="inline-link"
+            href="https://store.steampowered.com/search/?filter=topsellers&category1=998&cc=th"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Top Sellers ในประเทศไทย
+          </a>{' '}
+          เลือกเฉพาะเกมที่ข้อมูลครบ ไม่ใช่อันดับรวมแบบสดหรือการรับประกันความชอบ
+        </p>
+        <p>
           เกมออกใหม่ ภาพ วันที่วางจำหน่าย และแท็กจาก{' '}
           <a
             className="inline-link"

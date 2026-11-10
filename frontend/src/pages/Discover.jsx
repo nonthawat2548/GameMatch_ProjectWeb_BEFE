@@ -11,6 +11,9 @@ export default function Discover() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [retry, setRetry] = useState(0);
+  const [page, setPage] = useState(1);
+  const [sort, setSort] = useState('popular');
+  const pageSize = 24;
 
   useEffect(() => {
     let ignore = false;
@@ -38,6 +41,15 @@ export default function Discover() {
     (game) =>
       (genre === 'all' || game.genres.includes(genre)) && game.title.toLowerCase().includes(query),
   );
+  if (sort === 'newest')
+    shown.sort(
+      (a, b) =>
+        (b.releaseDate || '').localeCompare(a.releaseDate || '') || a.title.localeCompare(b.title),
+    );
+  if (sort === 'name') shown.sort((a, b) => a.title.localeCompare(b.title));
+  const totalPages = Math.max(1, Math.ceil(shown.length / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const pageGames = shown.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   return (
     <>
@@ -53,6 +65,20 @@ export default function Discover() {
       <section aria-labelledby="discover-heading" aria-busy={loading}>
         <div className="catalog-toolbar">
           <h2 id="discover-heading">รายการเกม</h2>
+          <label className="sort-label">
+            เรียงตาม
+            <select
+              value={sort}
+              onChange={(e) => {
+                setSort(e.target.value);
+                setPage(1);
+              }}
+            >
+              <option value="popular">ยอดนิยมก่อน</option>
+              <option value="newest">ใหม่ล่าสุด</option>
+              <option value="name">ชื่อเกม A–Z</option>
+            </select>
+          </label>
           <label className="search-label">
             ค้นหาเกม
             <input
@@ -60,6 +86,7 @@ export default function Discover() {
               value={q}
               onChange={(e) => {
                 setQ(e.target.value);
+                setPage(1);
               }}
               placeholder="พิมพ์ชื่อเกม…"
             />
@@ -70,7 +97,10 @@ export default function Discover() {
             <button
               className="genre-filter"
               aria-pressed={genre === 'all'}
-              onClick={() => setGenre('all')}
+              onClick={() => {
+                setGenre('all');
+                setPage(1);
+              }}
             >
               ทุกแนว
             </button>
@@ -79,7 +109,10 @@ export default function Discover() {
                 className="genre-filter"
                 key={value}
                 aria-pressed={genre === value}
-                onClick={() => setGenre(value)}
+                onClick={() => {
+                  setGenre(value);
+                  setPage(1);
+                }}
               >
                 {genreLabel(value)}
               </button>
@@ -102,7 +135,28 @@ export default function Discover() {
             <p className="muted" role="status">
               พบ {shown.length} เกม
             </p>
-            <GameGrid games={shown} />
+            <GameGrid games={pageGames} />
+            {totalPages > 1 && (
+              <nav className="pagination" aria-label="หน้ารายการเกม">
+                <button
+                  className="secondary"
+                  disabled={currentPage === 1}
+                  onClick={() => setPage(currentPage - 1)}
+                >
+                  ก่อนหน้า
+                </button>
+                <span>
+                  หน้า {currentPage} / {totalPages} · ครั้งละ {pageSize} เกม
+                </span>
+                <button
+                  className="secondary"
+                  disabled={currentPage === totalPages}
+                  onClick={() => setPage(currentPage + 1)}
+                >
+                  ถัดไป
+                </button>
+              </nav>
+            )}
           </>
         )}
       </section>
