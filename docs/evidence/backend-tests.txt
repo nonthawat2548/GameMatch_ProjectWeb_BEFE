@@ -15,12 +15,12 @@
 === RUN   TestOriginAllowlist
 --- PASS: TestOriginAllowlist (0.00s)
 === RUN   TestDatabaseMemberOwnershipAndSessionLifecycle
---- PASS: TestDatabaseMemberOwnershipAndSessionLifecycle (9.33s)
+--- PASS: TestDatabaseMemberOwnershipAndSessionLifecycle (10.37s)
 === RUN   TestDatabaseAdminVisibilityAndConstraints
---- PASS: TestDatabaseAdminVisibilityAndConstraints (7.22s)
+--- PASS: TestDatabaseAdminVisibilityAndConstraints (9.40s)
 === RUN   TestDatabaseRawgSyncPreservesEditsAndRollsBack
-2026/11/10 15:00:40 database operation failed: *pgconn.PgError
---- PASS: TestDatabaseRawgSyncPreservesEditsAndRollsBack (3.85s)
+2026/11/10 15:09:56 database operation failed: *pgconn.PgError
+--- PASS: TestDatabaseRawgSyncPreservesEditsAndRollsBack (3.96s)
 === RUN   TestRegisterRejectsRoleAndMalformedInputBeforeDatabase
 --- PASS: TestRegisterRejectsRoleAndMalformedInputBeforeDatabase (0.00s)
 === RUN   TestLoginRejectsOversizedPasswordBeforeDatabase
@@ -61,8 +61,8 @@
 === RUN   TestSteamRejectsBadFeedAndConcurrentImport
 --- PASS: TestSteamRejectsBadFeedAndConcurrentImport (0.00s)
 === RUN   TestDatabaseSteamSyncMetadataPreservationAndRollback
-2026/11/10 15:00:45 database operation failed: *pgconn.PgError
---- PASS: TestDatabaseSteamSyncMetadataPreservationAndRollback (5.17s)
+2026/11/10 15:10:02 database operation failed: *pgconn.PgError
+--- PASS: TestDatabaseSteamSyncMetadataPreservationAndRollback (5.85s)
 === RUN   TestSyncMissingKeyAndConcurrentImport
 --- PASS: TestSyncMissingKeyAndConcurrentImport (0.00s)
 === RUN   TestSyncRejectsBadUpstreamBeforeDatabase
@@ -80,4 +80,4 @@
     --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/oversized_body (0.01s)
     --- PASS: TestSyncRejectsBadUpstreamBeforeDatabase/more_than_first_page (0.00s)
 PASS
-ok  	gamematch/tests	26.798s
+ok  	gamematch/tests	30.467s

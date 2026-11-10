@@ -10,6 +10,8 @@ Only actual completed results are recorded here; a created resource is not proof
 | Vercel | https://gamematch-projectweb-befe.vercel.app — production READY, dpl_8zzFrR5x7pQpWPnzcY6kJogWVtkq, commit fda44e555d3e22c29ba685a82ca6eb2070dd6608; separate project prj_Z3AR2chEAfNNc10ATA06eQ5kM9uh, Node 22, CRA root frontend; public Guest access verified |
 | RAWG | No user key configured; real import pending; Demo seed rows are fictional |
 
+Latest catalog update: the user's requested Steam alternative is now implemented and imported 12 real New Releases with Store art, dates, tags and links. The four original Demo rows are hidden, not deleted. RAWG is optional and its missing key does not block Steam. The registered account the user selected has been promoted to Admin and verified; the private email is omitted from this public document. Image QA at desktop/mobile/narrow and real Admin Steam sync evidence is in `evidence/steam-browser/` and `evidence/cloud-browser/`.
+
 Local start from project root:
 
 ```powershell

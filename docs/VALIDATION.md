@@ -1,5 +1,17 @@
 # Validation record — 10 November 2026 (Asia/Bangkok)
 
+## Latest Steam catalog / image verification
+
+The user requested recent real games and images from Steam or another source. Added a separate guarded Go handler `POST /api/admin/sync/steam`, an additive three-column migration (steam_id unique, release_date, synced_at), and date/source-aware React cards/detail/Home. Real Go → Steam Store → Supabase import persisted **12 eligible New Releases**, with release dates supplied by Steam (9 November 2026 in this snapshot), images, categories and Store tags. The four exact original Demo rows were hidden rather than deleted; no user account, favorites or custom game was erased. A separate user-requested Admin promotion was completed and verified; the private email is not recorded in this public repo.
+
+- Frontend format/check, **13 suites / 84 tests**, production build passed. New tests verify Steam image/source/date display and Admin Steam request/reload behavior. Existing RAWG compatibility assertions remain passing.
+- Go tidy/fmt/vet/build and **23 passing top-level tests** passed with four isolated-schema Supabase integration tests. One additional real-network import test is explicitly skipped by default; it was run separately with opt-in and passed the actual import (12 entries). Steam checks cover upcoming/DLC/future/ambiguous dates, missing/changed tags, duplicate-safe updates, preserved publication/descriptions including intentional empty descriptions, source capsule selection, guest401/member403, and transaction rollback after a real SQL failure.
+- Hosted image QA: `evidence/steam-browser/report.json` verifies **all 12 actual CDN covers load with naturalWidth >0**, no placeholders or uncaught page errors, source links/dates and no horizontal overflow at 1366/390/320px. Nine screenshots were captured and reviewed as local image files, without accessing the user's desktop/browser.
+- Hosted full user journeys were repeated against the real Steam catalog. `evidence/cloud-browser/report.json` now includes an actual Admin Steam button fetch/import plus the existing Guest/Member/Admin/auth/persistence flows; temporary QA users/game were removed.
+- Source snapshot: `evidence/steam-catalog.json`. Steam sync reads public Store endpoints, at most 20 candidates and 12 eligible games, manually on Admin request. This is a feed snapshot, not an exhaustive all-platform ranking or a scheduled updater. These endpoints are not a guaranteed versioned Steamworks contract; upstream/schema changes fail with 502 and keep the old catalog. Genre/category/Store tag values are mapped without inferring co-op from generic multiplayer. Descriptions are plain text. Per-game and page-level Steam credits/links are present; RAWG stays available as an optional separate import requiring a real key.
+
+The following sections retain earlier snapshots; their older Demo-only/RAWG-key-pending and test counts do not describe the latest Steam catalog.
+
 ## Latest full-stack run — 10 November 2026
 
 - Created **gamematch-db** (`mcwhgbiodyqotfgwzgkd`) in the user-selected Supabase organization, Singapore, after the user explicitly accepted the quoted **$0/month**. Applied `database/schema.sql` and the four explicitly fictional `Demo:` seed rows. MovieHub was not resumed or modified.

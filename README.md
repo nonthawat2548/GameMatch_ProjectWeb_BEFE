@@ -81,6 +81,7 @@ npm run check
 `npm run check` ตรวจ format → React tests → production build ตามลำดับ และหยุดเมื่อขั้นใดไม่ผ่าน หน้ารายการโหลดเกมจาก Go แล้วค้นหา/เลือกแนวด้วย state ในเครื่องตามตัวอย่าง MovieHub; กดพิมพ์ไม่ส่ง API ใหม่ทุกตัวอักษร ไม่มี cache รายวันเพื่อให้เปิดหน้าใหม่แล้วเห็นการแก้ข้อมูลของ Admin
 
 ## 4. สร้าง Admin และนำเข้าเกมจริง
+- หน้า Admin มีปุ่ม **อัปเดตเกมออกใหม่ Steam** ใช้ได้ทันทีโดยไม่ต้องมี RAWG key นำเข้า New Releases สูงสุด 12 เกมต่อรอบ พร้อมภาพ landscape, วันที่วางจำหน่าย และลิงก์ต้นทาง เป็นการกดอัปเดตเอง ไม่ใช่การดึงอัตโนมัติทุกครั้งที่ผู้ชมเปิดเว็บ
 - สมัครสมาชิกผ่านเว็บ ไม่มี default account หรือรหัสผ่านฝังในโค้ด
 - Supabase SQL Editor: `UPDATE gm_members SET role='admin' WHERE email='YOUR_REGISTERED_EMAIL';`
 - Reload/เข้าสู่ระบบใหม่เพื่อให้ FE อ่าน role ล่าสุด (Backend ตรวจ role จาก DB ทุกคำขอ)
@@ -92,7 +93,7 @@ npm run check
 ## 5. Deploy
 ใช้ mono-repo นี้ได้ หรือแยก frontend/backend เป็น 2 repos ตามที่ทีมสะดวก
 
-ผลจริงล่าสุดอยู่ใน `docs/DEPLOYMENT.md`: Frontend https://gamematch-projectweb-befe.vercel.app เรียก Backend https://gamematch-api-hzv6.onrender.com ซึ่งเชื่อม Supabase จริง ตั้ง CORS ให้ตรง origin แล้ว ข้อมูล Demo ยังคงเป็น fixtures ไม่ใช่ผลนำเข้า RAWG จริง
+ผลจริงล่าสุดอยู่ใน `docs/DEPLOYMENT.md`: Frontend https://gamematch-projectweb-befe.vercel.app เรียก Backend https://gamematch-api-hzv6.onrender.com ซึ่งเชื่อม Supabase จริง ตั้ง CORS ให้ตรง origin แล้ว คลังหลักใช้ Steam จริงและซ่อน Demo เดิมไว้ RAWG เป็นทางเลือกเสริมที่ยังไม่มี key
 
 Vercel:
 - เชื่อม GitHub repo, Root Directory = frontend

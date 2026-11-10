@@ -45,3 +45,7 @@ node frontend/tests/browser/live.cjs
 ```
 
 โหมดนี้ไม่เปิด local server/Go process และใช้ HTTPS ของจริง ผลแยกไว้ใน `docs/evidence/cloud-browser/` ไม่มี HTTP mock และไม่ใช้ browser session ของผู้ใช้
+
+ตั้ง `$env:GM_QA_STEAM_SYNC='1'` เพิ่มเพื่อทดสอบปุ่ม Admin Steam จริง (จะอัปเดตคลังจริงโดยตั้งใจ) ชุดทดสอบเลือกเกม/คะแนนจาก API ปัจจุบัน ไม่ยึดชื่อ Demo หลังย้ายเป็น Steam
+
+`node frontend/tests/browser/steam-gallery.cjs` ตรวจหน้าสาธารณะบน URL จริงโดยไม่แก้ข้อมูล ตรวจว่ารูป Steam ทุกใบดาวน์โหลดสำเร็จจริง พร้อมวันที่/ลิงก์ต้นทางและขนาดจอ 1366/390/320px ผลแยกใน `docs/evidence/steam-browser/`

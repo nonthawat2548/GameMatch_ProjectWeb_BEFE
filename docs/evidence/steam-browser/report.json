@@ -1,0 +1,91 @@
+{
+  "frontend": "https://gamematch-projectweb-befe.vercel.app",
+  "backend": "https://gamematch-api-hzv6.onrender.com",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1366,
+      "height": 900,
+      "loadedCovers": 12,
+      "pageWidth": 1366
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "loadedCovers": 12,
+      "pageWidth": 390
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 720,
+      "loadedCovers": 12,
+      "pageWidth": 320
+    }
+  ],
+  "pageErrors": [],
+  "games": [
+    {
+      "title": "Upwardly",
+      "steamId": 5427130,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Geo Bobs",
+      "steamId": 5184160,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Mool: Chroma",
+      "steamId": 5156510,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "ZOLGE STATION: HUGA Waiwai Academy",
+      "steamId": 5466110,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Vinculum",
+      "steamId": 5065500,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Memento Dawn",
+      "steamId": 2319360,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Santa's Workshop: Tidy Up Christmas",
+      "steamId": 5287500,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Wild Crazy 8s",
+      "steamId": 4878180,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Vida:Unslain",
+      "steamId": 4575700,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "1999TOKOYO Building",
+      "steamId": 4099810,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "Hair Removal Salon Simulator",
+      "steamId": 4351380,
+      "releaseDate": "2026-11-09"
+    },
+    {
+      "title": "CLETTER Homophone Word Spelling",
+      "steamId": 5302590,
+      "releaseDate": "2026-11-09"
+    }
+  ],
+  "status": "passed"
+}

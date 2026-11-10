@@ -86,7 +86,7 @@ func TestDatabaseSteamSyncMetadataPreservationAndRollback(t *testing.T) {
 	if _, err := a.S.DB.Exec(ctx, `UPDATE gm_members SET role='admin' WHERE id=$1`, id); err != nil {
 		t.Fatal(err)
 	}
-	feed := `{"new_releases":{"items":[{"id":501},{"id":502}]}}`
+	feed := `{"new_releases":{"items":[{"id":501,"large_capsule_image":"https://cdn.steamstatic.com/capsule_616x353.jpg"},{"id":502}]}}`
 	page := `<a class="app_tag">Story Rich</a>`
 	a.SteamClient = steamClient(&feed, func(id int64) string { return steamResponse(id, "game", "Jan 1, 2020", false) }, &page)
 	if _, err := a.S.DB.Exec(ctx, `INSERT INTO gm_games(steam_id,title,description,is_published) VALUES(501,'Demo: Original','Admin edit',false)`); err != nil {
@@ -106,6 +106,9 @@ func TestDatabaseSteamSyncMetadataPreservationAndRollback(t *testing.T) {
 		if *g.SteamID == 501 && (g.Description != "Admin edit" || g.Published) {
 			t.Fatal("admin edits overwritten")
 		}
+		if *g.SteamID == 501 && !strings.Contains(g.ImageURL, "capsule_616x353") {
+			t.Fatal("did not prefer the Store capsule")
+		}
 		if *g.SteamID == 502 && g.Description != "Fixture & plain text" {
 			t.Fatal("Steam HTML was not converted to text")
 		}
@@ -113,6 +116,14 @@ func TestDatabaseSteamSyncMetadataPreservationAndRollback(t *testing.T) {
 		if !strings.Contains(joined, "story-rich") || !strings.Contains(joined, "singleplayer") || strings.Contains(joined, "co-op") {
 			t.Fatal("incorrect tag/category mapping")
 		}
+	}
+	if _, err := a.S.DB.Exec(ctx, `UPDATE gm_games SET description='' WHERE steam_id=501`); err != nil {
+		t.Fatal(err)
+	}
+	requestJSON(t, server, "POST", "/api/admin/sync/steam", token, nil, 200, nil)
+	var cleared string
+	if err := a.S.DB.QueryRow(ctx, `SELECT description FROM gm_games WHERE steam_id=501`).Scan(&cleared); err != nil || cleared != "" {
+		t.Fatal("sync overwrote an intentionally cleared description")
 	}
 	if _, err := a.S.DB.Exec(ctx, `CREATE FUNCTION reject_steam_fixture() RETURNS trigger LANGUAGE plpgsql AS $$ BEGIN IF NEW.steam_id=503 THEN RAISE EXCEPTION 'intentional Steam QA rollback'; END IF; RETURN NEW; END $$; CREATE TRIGGER reject_steam BEFORE INSERT ON gm_games FOR EACH ROW EXECUTE FUNCTION reject_steam_fixture();`); err != nil {
 		t.Fatal(err)

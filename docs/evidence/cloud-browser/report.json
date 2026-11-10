@@ -16,6 +16,10 @@
       "status": "passed"
     },
     {
+      "name": "Admin button fetches current Steam New Releases through real Go and persists the catalog",
+      "status": "passed"
+    },
+    {
       "name": "Admin CRUD/publication through Go/Supabase; public hidden detail is 404",
       "status": "passed"
     },
@@ -37,7 +41,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/games/2",
+      "path": "/api/games/11",
       "status": 200
     },
     {
@@ -52,12 +56,12 @@
     },
     {
       "method": "GET",
-      "path": "/api/games/2",
+      "path": "/api/games/11",
       "status": 200
     },
     {
       "method": "PUT",
-      "path": "/api/me/favorites/2",
+      "path": "/api/me/favorites/11",
       "status": 200
     },
     {
@@ -112,6 +116,16 @@
     },
     {
       "method": "POST",
+      "path": "/api/admin/sync/steam",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/games",
+      "status": 200
+    },
+    {
+      "method": "POST",
       "path": "/api/admin/games",
       "status": 200
     },
@@ -122,7 +136,7 @@
     },
     {
       "method": "PUT",
-      "path": "/api/admin/games/7",
+      "path": "/api/admin/games/32",
       "status": 200
     },
     {
@@ -132,7 +146,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/api/admin/games/7",
+      "path": "/api/admin/games/32",
       "status": 200
     },
     {
