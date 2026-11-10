@@ -7,10 +7,11 @@
     {
       "id": 19,
       "steamId": 5427130,
-      "title": "Upwardly",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5427130/0bb5c2aa6e79e2490e7d3b6dccce2b5df560ed56/header.jpg?t=1794288002",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Upwardly",
+      "description": "Upwardly is a colorful 3D precision platformer. Climb 10 castles across 5,000 meters, dodge deadly hazards, and race the clock. Choose from three difficulty modes, master every jump, and chase your personal best on randomized or shareable seeded courses.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5427130/b95007f6bdf51b3688c61e5f91127991261ee937/capsule_616x353.jpg?t=1794288002",
       "genres": [
         "action",
         "adventure",
@@ -38,15 +39,22 @@
         "family-friendly",
         "fantasy",
         "singleplayer"
-      ]
+      ],
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 18,
       "steamId": 5184160,
-      "title": "Geo Bobs",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5184160/5736e03bd3192494727c526e5233ecd562ba5d60/header.jpg?t=1794286834",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Geo Bobs",
+      "description": "GeoBobs is a solo/multiplayer geo location party game! Study a picture, explore a 3D map, and race your friends to find where it was taken. Lock in your guess, earn points based on accuracy, and prove you've got the best eye for detail.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5184160/7dfca664b80cb0bd004289efae7c9d72cc0ad1dd/capsule_616x353.jpg?t=1794286834",
       "genres": [
         "casual",
         "indie"
@@ -69,15 +77,21 @@
         "local-multiplayer",
         "multiplayer",
         "singleplayer"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 17,
       "steamId": 5156510,
-      "title": "Mool: Chroma",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5156510/9bbef4db90c55fc3362f93dbf01c070c5dcaab8a/header.jpg?t=1794290726",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Mool: Chroma",
+      "description": "A top-down roguelite where you are the monster. Absorb colors, mix them into impossible forms, and tear down the \"heroes\" who farmed your kind. Nine apex awakenings, hand-built rooms dealt fresh every run, and an altar that trades your curses for power.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5156510/f541bdab35a7fbb2f1b2dbe9ae50df6a744e075b/capsule_616x353.jpg?t=1794290726",
       "genres": [
         "action",
         "indie"
@@ -102,15 +116,22 @@
         "singleplayer",
         "fast-paced",
         "replay-value"
-      ]
+      ],
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 16,
       "steamId": 5466110,
-      "title": "ZOLGE STATION: HUGA Waiwai Academy",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5466110/77fa3419e0119fc9e1e1502560d23567e1cb3d54/header.jpg?t=1794284863",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "ZOLGE STATION: HUGA Waiwai Academy",
+      "description": "Free Issue 00 includes an exclusive special stage of the wild run & gun HIJURA SCARLET GEAR! A disk-magazine-style collection of indie studio HU-GA's work, also with the Final Re:Quest movie trailer in TRUE PIXEL, a special booklet and four Zolge Station talk specials. New issues arrive as DLC.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5466110/46654d6b228abf100882aae7a9b32368ceb4e5ea/capsule_616x353.jpg?t=1794284863",
       "genres": [
         "casual",
         "indie",
@@ -137,15 +158,21 @@
         "1990's",
         "old-school",
         "singleplayer"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 15,
       "steamId": 5065500,
-      "title": "Vinculum",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5065500/ccf421815abb76cab57c4148db8486370276bbc9/header.jpg?t=1794282979",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Vinculum",
+      "description": "Do the math and survive the aftermath. An easy-to-learn card battler: pull off math combos, get stuck in a fraction, stack functions until the numbers go absurd, break the enemy lines, try not to divide by zero. Real, modern, correct math. But when math isn't enough, resort to more arcane means...",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5065500/f953770c0e1c3c60c1a3703f5f61489c394d16de/capsule_616x353.jpg?t=1794282979",
       "genres": [
         "strategy"
       ],
@@ -170,15 +197,22 @@
         "colorful",
         "stylized",
         "tactical"
-      ]
+      ],
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 14,
       "steamId": 2319360,
-      "title": "Memento Dawn",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2319360/header.jpg?t=1794282823",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Memento Dawn",
+      "description": "A colorful puzzle adventure about a lost child searching for her memories, guiding her through darkness by mastering light and shadow.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2319360/ba1d28dfaee27735c99fbf20c0916362b5a9e3fd/capsule_616x353.jpg?t=1794282823",
       "genres": [
         "casual",
         "indie"
@@ -200,15 +234,21 @@
         "cozy",
         "colorful",
         "indie"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 13,
       "steamId": 5287500,
-      "title": "Santa's Workshop: Tidy Up Christmas",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5287500/7da41075779a6d32719478c08405bd9739e6fe57/header.jpg?t=1794282429",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Santa's Workshop: Tidy Up Christmas",
+      "description": "Santa's Workshop: Tidy Up Christmas is a cozy first-person present sorting game where you help Santa and his elves sort 2,352 presents! With each present you sort, you get one step closer to unlocking Santa's gifts, which will help you sort even faster. Are you willing to help Santa this year?",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5287500/76e1cc19fac385d93417f5e05bbb5cfa84c066e8/capsule_616x353.jpg?t=1794282429",
       "genres": [
         "casual",
         "indie"
@@ -232,15 +272,22 @@
         "controller",
         "singleplayer",
         "puzzle"
-      ]
+      ],
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 12,
       "steamId": 4878180,
-      "title": "Wild Crazy 8s",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4878180/be43ca0c8dc28b7d513be415a9ab327671f8f639/header.jpg?t=1794281354",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Wild Crazy 8s",
+      "description": "The Crazy Eights roguelike. Every 8 is wild: call the suit, keep the chain alive, and cash out monster combos. Build decks that bend the rules, stack House Rules that multiply each other, and break the casino one floor at a time.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4878180/6e51f62d13ebc243dd4b1adb8305e6440c832cb3/capsule_616x353.jpg?t=1794281354",
       "genres": [
         "casual",
         "indie",
@@ -263,15 +310,21 @@
         "colorful",
         "indie",
         "controller"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 11,
       "steamId": 4575700,
-      "title": "Vida:Unslain",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4575700/f521bf049aa844846c9b5b4ebe3ffd18640273db/header.jpg?t=1794280857",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Vida:Unslain",
+      "description": "Act first, or let your opponent go first? Card battles where cost, movement, and turn order are tightly intertwined. Choose your path, shape your options with the items you find, and press deeper into the labyrinth.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4575700/63309c01b2637e940d6530069ab91ece14040286/capsule_616x353.jpg?t=1794280857",
       "genres": [
         "indie",
         "rpg"
@@ -289,15 +342,21 @@
         "2d",
         "indie",
         "singleplayer"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 10,
       "steamId": 4099810,
-      "title": "1999TOKOYO Building",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4099810/b6cc300848c6d5186272fb10361dca827fb864a2/header.jpg?t=1794279450",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "1999TOKOYO Building",
+      "description": "1999. The protagonist, a boy named Akira, finds himself lost in the TOKOYO Building—an indoor amusement park filled with secrets and eerie rumors. There, he begins living and working alongside its peculiar staff, but... did you know? People disappear in the TOKOYO Building.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4099810/516cac1c541272715f23c9db6c5f8f09316457eb/capsule_616x353.jpg?t=1794279450",
       "genres": [
         "adventure",
         "casual",
@@ -324,15 +383,21 @@
         "multiple-endings",
         "controller",
         "singleplayer"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 9,
       "steamId": 4351380,
-      "title": "Hair Removal Salon Simulator",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4351380/a48db64bc27c36d1c7af20ca60c1068d22802e11/header.jpg?t=1794279121",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "Hair Removal Salon Simulator",
+      "description": "Run a men's hair removal salon! Zap body hair with a laser, watch the pain meter, and pitch aftercare packages for every budget. Earn good reviews to bring in new clients, then use your profits to upgrade your gear, hire staff, and make your shop the go-to spot for hairy hunks.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4351380/2a6edccd3bff2898c605b2d2d6793ded8a1a0013/capsule_616x353.jpg?t=1794279121",
       "genres": [
         "casual",
         "indie",
@@ -357,15 +422,21 @@
         "immersive-sim",
         "early-access",
         "management"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     },
     {
       "id": 8,
       "steamId": 5302590,
-      "title": "CLETTER Homophone Word Spelling",
-      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5302590/79c9a49a679283aecb5d6dbf3be600471e5304b1/header.jpg?t=1794278950",
       "releaseDate": "2026-11-09",
-      "syncedAt": "2026-11-10T07:57:47.835587+00:00",
+      "syncedAt": "2026-11-10T08:13:01.487489Z",
+      "title": "CLETTER Homophone Word Spelling",
+      "description": "CLETTER Homophone Word Spelling pictures English sounds. 7-color coding (colorful phonics) shows patterns. Spell right → words pop. Each level: tap letters, robot carries them, showing growth + 12 achievements. Switch CN/EN UI. Charts spot weak words & progress. PC numpad adds fun.",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5302590/195ca0000c9e1cf45bb3293dfc315cb8c8d12957/capsule_616x353.jpg?t=1794278950",
       "genres": [
         "casual",
         "indie",
@@ -393,7 +464,12 @@
         "logic",
         "free-to-play",
         "indie"
-      ]
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "isPublished": true,
+      "matchScore": 0
     }
   ]
 }
