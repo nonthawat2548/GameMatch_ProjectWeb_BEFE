@@ -2,7 +2,7 @@
 
 โปรเจกต์พื้นฐานเว็บแนะนำเกม: React + Go net/http + PostgreSQL ครบเส้นทาง Guest / Member / Admin มี SQL, RAWG sync และพรอมต์ส่งต่องานให้ Codex
 
-**สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย นำเข้าเกมจริงพร้อมภาพ/วันที่จาก Steam New Releases แล้ว 12 เกม และซ่อน Demo เดิมโดยไม่ลบข้อมูล RAWG ยังเป็นแหล่งเสริมที่ต้องตั้ง key ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
+**สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย คลังมีเกมจริงพร้อมภาพ 112 เกม รวมชุดยอดนิยม 100 เกมจาก Steam Most Played และ Top Sellers (TH) ตามรอบอัปเดต ซ่อน Demo เดิมโดยไม่ลบข้อมูล RAWG ยังเป็นแหล่งเสริมที่ต้องตั้ง key ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
 
 อัปเดต 10 พ.ย. 2569: frontend ผ่าน format, 13 suites / 86 tests และ production build; headless QA ผ่านทั้ง API จำลองและเส้นทาง React → Go → Supabase จริง รวมสมัครสมาชิก รายการโปรดสองบัญชี Preferences, Profile/Password และ Admin ไม่มีการเปิดหน้าต่างหรือควบคุมจอผู้ใช้ สร้าง `gamematch-db` ใหม่ตามที่ผู้ใช้ยืนยัน โดยไม่แตะ MovieHub และใช้ repo `nonthawat2548/GameMatch_ProjectWeb_BEFE` ผล Go/DB และข้อจำกัดอยู่ใน `docs/evidence/`
 
@@ -81,6 +81,9 @@ npm run check
 `npm run check` ตรวจ format → React tests → production build ตามลำดับ และหยุดเมื่อขั้นใดไม่ผ่าน หน้ารายการโหลดเกมจาก Go แล้วค้นหา/เลือกแนวด้วย state ในเครื่องตามตัวอย่าง MovieHub; กดพิมพ์ไม่ส่ง API ใหม่ทุกตัวอักษร ไม่มี cache รายวันเพื่อให้เปิดหน้าใหม่แล้วเห็นการแก้ข้อมูลของ Admin
 
 ## 4. สร้าง Admin และนำเข้าเกมจริง
+- คลังปัจจุบันมี 112 เกม: ชุดยอดนิยม 100 เกมและ New Releases เดิม 12 เกม หน้ารายการแบ่งหน้าละ 24 เกม ค้นหา/เลือกแนวได้ทั้งคลัง และเรียงยอดนิยม/ใหม่ล่าสุด/ชื่อได้
+- อัปเดตชุดยอดนิยมเอง: หลังตั้ง `DATABASE_URL` ใน terminal ให้ตรง GameMatch แล้ว รัน `cd backend` และ `go run ./cmd/import-popular` ใช้เวลาหลายนาทีอ่าน Steam ทีละเกม ไม่ต้องมี API key เป็นคำสั่งที่รันเองบนฝั่ง server
+- ลำดับมาจาก Most Played แล้วเติมด้วย Top Sellers ประเทศไทย ไม่ใช่อันดับโลก 1–100 แบบสด กรองเกมที่ยังไม่ขาย DLC โปรแกรม และรายการข้อมูลไม่ครบ ถ้าได้ไม่ครบ 100 จะไม่เขียนชุดใหม่ คงคำอธิบาย/สถานะเผยแพร่ที่ Admin แก้ไว้
 - หน้า Admin มีปุ่ม **อัปเดตเกมออกใหม่ Steam** ใช้ได้ทันทีโดยไม่ต้องมี RAWG key นำเข้า New Releases สูงสุด 12 เกมต่อรอบ พร้อมภาพ landscape, วันที่วางจำหน่าย และลิงก์ต้นทาง เป็นการกดอัปเดตเอง ไม่ใช่การดึงอัตโนมัติทุกครั้งที่ผู้ชมเปิดเว็บ
 - สมัครสมาชิกผ่านเว็บ ไม่มี default account หรือรหัสผ่านฝังในโค้ด
 - Supabase SQL Editor: `UPDATE gm_members SET role='admin' WHERE email='YOUR_REGISTERED_EMAIL';`
