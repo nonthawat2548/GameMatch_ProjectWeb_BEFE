@@ -1,0 +1,48 @@
+{
+  "frontend": "https://gamematch-projectweb-befe.vercel.app",
+  "backend": "https://gamematch-api-hzv6.onrender.com",
+  "clientDate": "2026-11-10 Asia/Bangkok",
+  "status": "passed",
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "route": "/discover",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "route": "/match",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "route": "/games/4",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "route": "/me/profile",
+      "status": 200,
+      "spaRoot": true
+    },
+    {
+      "origin": "https://gamematch-projectweb-befe.vercel.app",
+      "status": 200,
+      "allowOrigin": "https://gamematch-projectweb-befe.vercel.app"
+    },
+    {
+      "origin": "https://untrusted.example",
+      "status": 403,
+      "allowOrigin": null
+    }
+  ]
+}

@@ -29,13 +29,24 @@ const emails = ['qa-' + stamp + '-a@example.test', 'qa-' + stamp + '-b@example.t
 const title = 'Demo: QA browser ' + stamp;
 const password = crypto.randomBytes(16).toString('hex');
 const nextPassword = crypto.randomBytes(16).toString('hex');
-const origin = 'http://127.0.0.1:4173';
-const apiOrigin = 'http://localhost:8080';
-const output = path.join(root, 'docs/evidence/live-browser');
+const remote = Boolean(process.env.GM_QA_WEB_URL);
+const origin = remote ? new URL(process.env.GM_QA_WEB_URL).origin : 'http://127.0.0.1:4173';
+const apiOrigin = remote ? new URL(process.env.GM_QA_API_URL).origin : 'http://localhost:8080';
+if (
+  remote &&
+  (!origin.startsWith('https://') ||
+    !apiOrigin.startsWith('https://') ||
+    /moviehub/i.test(origin + apiOrigin))
+)
+  throw new Error('Remote QA requires the dedicated GameMatch HTTPS URLs.');
+const output = path.join(root, 'docs/evidence', remote ? 'cloud-browser' : 'live-browser');
 fs.mkdirSync(output, { recursive: true });
 const report = {
-  scope:
-    'Production React -> local Go net/http -> dedicated Supabase PostgreSQL, real HTTP and database, Demo fixtures. No live RAWG import or cloud hosting claim.',
+  scope: remote
+    ? 'Deployed Vercel React -> Render Go -> Supabase PostgreSQL; real HTTPS, database and Demo fixtures. No HTTP mocks or live RAWG import.'
+    : 'Production React -> local Go net/http -> dedicated Supabase PostgreSQL, real HTTP and database, Demo fixtures. No live RAWG import or cloud hosting claim.',
+  frontend: origin,
+  backend: apiOrigin,
   cases: [],
   requests: [],
   pageErrors: [],
@@ -138,39 +149,42 @@ async function capture(page, name) {
 }
 async function run() {
   let api, browser;
-  let ownApi = false;
+  let dataMayExist = false;
   try {
-    await freePort(8080);
-    await freePort(4173);
-    await new Promise((resolve, reject) =>
-      staticServer.once('error', reject).listen(4173, '127.0.0.1', resolve),
-    );
-    api = spawn(path.join(root, 'backend/server.exe'), [], {
-      cwd: path.join(root, 'backend'),
-      env: { ...process.env, ...env, PORT: '8080', ALLOWED_ORIGINS: origin },
-      windowsHide: true,
-    });
-    ownApi = true;
-    let logs = '';
-    api.stdout.on('data', (chunk) => {
-      logs += chunk;
-    });
-    api.stderr.on('data', (chunk) => {
-      logs += chunk;
-    });
-    let ready = false;
-    for (let i = 0; i < 60; i++) {
-      if (api.exitCode !== null) throw new Error('Owned QA API failed to start: ' + logs);
-      try {
-        const health = await fetch(apiOrigin + '/healthz');
-        if (health.ok) {
-          ready = true;
-          break;
-        }
-      } catch {}
-      await delay(500);
+    if (!remote) {
+      await freePort(8080);
+      await freePort(4173);
+      await new Promise((resolve, reject) =>
+        staticServer.once('error', reject).listen(4173, '127.0.0.1', resolve),
+      );
+      api = spawn(path.join(root, 'backend/server.exe'), [], {
+        cwd: path.join(root, 'backend'),
+        env: { ...process.env, ...env, PORT: '8080', ALLOWED_ORIGINS: origin },
+        windowsHide: true,
+      });
+      let logs = '';
+      api.stdout.on('data', (chunk) => {
+        logs += chunk;
+      });
+      api.stderr.on('data', (chunk) => {
+        logs += chunk;
+      });
+      let ready = false;
+      for (let i = 0; i < 60; i++) {
+        if (api.exitCode !== null) throw new Error('Owned QA API failed to start: ' + logs);
+        try {
+          const health = await fetch(apiOrigin + '/healthz');
+          if (health.ok) {
+            ready = true;
+            break;
+          }
+        } catch {}
+        await delay(500);
+      }
+      assert(ready, 'local API health check timed out');
+    } else {
+      assert.equal((await call('GET', '/healthz')).status, 'ok');
     }
-    assert(ready, 'local API health check timed out');
     browser = await chromium.launch({ headless: true });
     report.browserVersion = browser.version();
     const context = await browser.newContext({
@@ -202,6 +216,7 @@ async function run() {
     await page.getByLabel('ชื่อที่แสดง').fill('Demo: QA member');
     await page.getByLabel('อีเมล').fill(emails[0]);
     await page.getByLabel('รหัสผ่าน', { exact: true }).fill(password);
+    dataMayExist = true;
     await page.getByRole('button', { name: 'สมัครและเข้าสู่ระบบ' }).click();
     await page.getByRole('heading', { name: 'Demo: Story Quest', exact: true }).waitFor();
     const tokenA = await page.evaluate(() => localStorage.getItem('gamematch_token'));
@@ -297,7 +312,7 @@ async function run() {
     throw error;
   } finally {
     if (browser) await browser.close();
-    if (ownApi) {
+    if (dataMayExist) {
       try {
         sql(
           "DELETE FROM gm_games WHERE title='" +
@@ -311,8 +326,8 @@ async function run() {
         report.cleanup = 'FAILED: disposable QA data requires cleanup';
         process.exitCode = 1;
       }
-      api.kill();
     }
+    if (api) api.kill();
     staticServer.closeAllConnections?.();
     if (staticServer.listening) await new Promise((resolve) => staticServer.close(resolve));
     fs.writeFileSync(path.join(output, 'report.json'), JSON.stringify(report, null, 2));

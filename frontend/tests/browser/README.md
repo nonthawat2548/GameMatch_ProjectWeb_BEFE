@@ -34,3 +34,14 @@ node frontend/tests/browser/live.cjs
 ```
 
 พอร์ต 8080 และ 4173 ต้องว่าง สคริปต์จะหยุดหากมีโปรแกรมใช้อยู่และไม่ปิดโปรแกรมของผู้ใช้ ผลอยู่ใน `docs/evidence/live-browser/` บัญชี QA ได้สิทธิ์ Admin ชั่วคราวผ่าน SQL สำหรับทดสอบก่อนถูกลบ ไม่มี default Admin สำหรับใช้งานจริง และไม่บันทึก password/token/DB URL ในรายงาน
+
+ตรวจเว็บที่ Deploy จริงด้วยสคริปต์เดียวกัน (ต้องเป็น DB GameMatch เดียวกับ backend/.env เพื่อ promote/cleanup เฉพาะข้อมูล QA):
+
+```powershell
+$env:GM_LIVE_QA = '1'
+$env:GM_QA_WEB_URL = 'https://gamematch-projectweb-befe.vercel.app'
+$env:GM_QA_API_URL = 'https://gamematch-api-hzv6.onrender.com'
+node frontend/tests/browser/live.cjs
+```
+
+โหมดนี้ไม่เปิด local server/Go process และใช้ HTTPS ของจริง ผลแยกไว้ใน `docs/evidence/cloud-browser/` ไม่มี HTTP mock และไม่ใช้ browser session ของผู้ใช้

@@ -2,7 +2,7 @@
 
 โปรเจกต์พื้นฐานเว็บแนะนำเกม: React + Go net/http + PostgreSQL ครบเส้นทาง Guest / Member / Admin มี SQL, RAWG sync และพรอมต์ส่งต่องานให้ Codex
 
-**สถานะ:** เชื่อมฐานข้อมูล GameMatch บน Supabase และตรวจระบบจริงในเครื่องแล้ว ยังต้องยืนยัน URLs ของ Vercel/Render และข้อมูล RAWG ก่อนรับรองพร้อมส่ง ดูผลล่าสุดใน docs/VALIDATION.md
+**สถานะ:** Deploy ครบ Vercel + Render เชื่อม Repo + Supabase และตรวจระบบจริงผ่านเว็บแล้ว เปิด https://gamematch-projectweb-befe.vercel.app ได้เลย ข้อมูลเริ่มต้นยังเป็นเกมสมมติ `Demo:` เพราะยังไม่มี RAWG API key ของทีม ดูหลักฐาน/ข้อจำกัดใน docs/VALIDATION.md
 
 อัปเดต 10 พ.ย. 2569: frontend ผ่าน format, 13 suites / 82 tests และ production build; headless QA ผ่านทั้ง API จำลองและเส้นทาง React → Go → Supabase จริง รวมสมัครสมาชิก รายการโปรดสองบัญชี Preferences, Profile/Password และ Admin ไม่มีการเปิดหน้าต่างหรือควบคุมจอผู้ใช้ สร้าง `gamematch-db` ใหม่ตามที่ผู้ใช้ยืนยัน โดยไม่แตะ MovieHub และใช้ repo `nonthawat2548/GameMatch_ProjectWeb_BEFE` ผล Go/DB และข้อจำกัดอยู่ใน `docs/evidence/`
 
@@ -91,7 +91,7 @@ npm run check
 ## 5. Deploy
 ใช้ mono-repo นี้ได้ หรือแยก frontend/backend เป็น 2 repos ตามที่ทีมสะดวก
 
-ผลจริงล่าสุดอยู่ใน `docs/DEPLOYMENT.md`: Supabase พร้อมใช้และ Backend ขึ้นที่ https://gamematch-api-hzv6.onrender.com แล้ว Frontend รอสิทธิ์ทีม Vercel และต้องตั้ง allowed origin หลังยืนยัน URL เว็บ ข้อมูล Demo ยังคงเป็น fixtures ไม่ใช่ผลนำเข้า RAWG จริง
+ผลจริงล่าสุดอยู่ใน `docs/DEPLOYMENT.md`: Frontend https://gamematch-projectweb-befe.vercel.app เรียก Backend https://gamematch-api-hzv6.onrender.com ซึ่งเชื่อม Supabase จริง ตั้ง CORS ให้ตรง origin แล้ว ข้อมูล Demo ยังคงเป็น fixtures ไม่ใช่ผลนำเข้า RAWG จริง
 
 Vercel:
 - เชื่อม GitHub repo, Root Directory = frontend

@@ -1,5 +1,7 @@
 # References inspected — 10 November 2026
 
+Latest resource check supersedes the earlier starter-only account note below: the user authorized a new `gamematch-db` in their selected organization at $0/month and supplied `nonthawat2548/GameMatch_ProjectWeb_BEFE`. Separate Render and Vercel GameMatch projects are now deployed and the hosted path passed real browser/HTTP/DB verification. See DEPLOYMENT/VALIDATION. MovieHub remained unchanged. Current Supabase changelog, connection/session-pooler docs and Render compute/env/deploy/health references were read. Go security advisories and govulncheck findings prompted dependency updates within the existing stack; before/after evidence is retained.
+
 ## Course code
 
 - https://github.com/nonthawat2548/moviehub-670710207 — inspected README and `src/api/tmdb.js`: React 19, Router 6, Tailwind 3; a central native fetch helper checks response status and returns JSON.
