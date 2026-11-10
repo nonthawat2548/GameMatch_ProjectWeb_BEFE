@@ -12,6 +12,7 @@
 - **Actual browser → Go → Supabase** verification passed in isolated headless Chromium: five scenario groups covering Guest Quiz/detail, UI registration/auto-login return, favorite reload, two-member API isolation/401/403, preference reload, Admin create/edit/hide/delete, profile refresh, password change, old JWT rejection, new-password login and logout. Four screenshots and sanitized request status evidence: `evidence/live-browser/report.json`. Disposable QA members/game were removed; original catalog preserved. Images are empty/fallback for Demo seed rows. This is real local Go + hosted DB, not a production deployment or live RAWG result.
 - The separate mock browser suite still passed ten groups at desktop/mobile/narrow sizes after the fix. No active-screen control, visible browser window, reused user profile or CUA action was used.
 - Git repository initialized locally and connected to the user's `https://github.com/nonthawat2548/GameMatch_ProjectWeb_BEFE`. The original initial README commit is retained. Deployment state is recorded in `DEPLOYMENT.md`; production UI and live RAWG remain unverified until recorded there. User did not have a RAWG API key, so no real import is claimed.
+- Pushed reviewed source/evidence as commit `5744c83085a07125b061fa7b42f7c1cb0d2fbd5f`; staged scan found no generated credentials, .env, tools, node_modules or binaries. Created a separate free Render service in the selected Workspace, main/Go1.27.3/Singapore. Deploy `dep-dbpcf1gm7kps73ahhm90` became **live**, then real API tests at `https://gamematch-api-hzv6.onrender.com` verified DB health, Register/Login, 401/403, favorite ownership and logout revocation. Cloud QA accounts were cleaned up. Evidence: `evidence/render-live-api.json`. Vercel frontend access was still awaiting the provider team-consent grant at this checkpoint.
 
 ## Earlier frontend phase — retained history
 
@@ -101,4 +102,3 @@ The following section came with the starter. It describes that earlier creation 
 8. Update profile -> navbar changes; wrong current password rejected; correct password invalidates old JWT; logout invalidates other sessions too.
 9. Deploy FE+BE; set exact allowed origin; refresh /games/ID directly; ensure no secrets appear in built JS or Git history.
 10. Run tests/build again after modifications and record actual outputs for video.
-

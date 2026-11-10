@@ -88,8 +88,10 @@ npm run check
 - หาก RAWG ล่ม ข้อมูลเดิมยังอยู่; ปุ่ม Sync จะแจ้ง Error
 - จัดเครดิต/ลิงก์ข้อมูลและรูปตามข้อกำหนดปัจจุบันของ RAWG ก่อนเผยแพร่จริง: https://rawg.io/apidocs
 
-## 5. Deploy (เตรียมให้ ไม่ได้ Deploy แล้ว)
+## 5. Deploy
 ใช้ mono-repo นี้ได้ หรือแยก frontend/backend เป็น 2 repos ตามที่ทีมสะดวก
+
+ผลจริงล่าสุดอยู่ใน `docs/DEPLOYMENT.md`: Supabase พร้อมใช้และ Backend ขึ้นที่ https://gamematch-api-hzv6.onrender.com แล้ว Frontend รอสิทธิ์ทีม Vercel และต้องตั้ง allowed origin หลังยืนยัน URL เว็บ ข้อมูล Demo ยังคงเป็น fixtures ไม่ใช่ผลนำเข้า RAWG จริง
 
 Vercel:
 - เชื่อม GitHub repo, Root Directory = frontend
@@ -128,4 +130,3 @@ Frontend ตรวจชื่อที่แสดงไม่เกิน 100 
 - Login/Register ใช้ limiter ร่วมกัน 30 คำขอต่อ TCP peer ต่อ 1 นาที ส่ง JSON 429 พร้อม Retry-After ไม่เชื่อ X-Forwarded-For จากผู้เรียก ข้อจำกัด: ทำงานต่อ process, restart รีเซ็ต และผู้ใช้หลัง proxy/NAT อาจแชร์ bucket ต้องวางแผนเพิ่มหากเปิดใช้งานวงกว้าง
 - DB integration และ RAWG transaction rollback ทดสอบกับ Supabase จริงแล้ว แต่ข้อมูล upstream ในเทส RAWG เป็น fixture; ยังไม่มี key ของผู้ใช้สำหรับนำเข้าจริง การ deploy และเครดิตข้อมูลจริงยังต้องยืนยันก่อนส่ง
 - อัปเดต React Router 6.30.6 และ AJV 8.20.0 แล้ว ผล `npm audit` ล่าสุดยังพบ 36 รายการ (16 low / 7 moderate / 13 high) รวม tooling ของ CRA และ Router advisory ที่ยังรายงานอยู่ ต้องตรวจตาม `docs/evidence/npm-audit.json` ก่อนเผยแพร่กว้าง ไม่ใช้ `npm audit fix --force` เพราะอาจเปลี่ยน stack ที่วิชากำหนด
-
